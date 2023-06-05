@@ -1,7 +1,13 @@
 baseURL: 'http://example.org/'
 languageCode: 'en-us'
-title: 'My New Hugo Site'
+title: 'High-performing Engineering Teams, and the Holy Grail'
 theme: 'github.com/dzello/reveal-hugo'
+
+outputFormats:
+  reveal:
+    baseName: 'index'
+    isHTML: true
+    mediaType: 'text/html'
 
 markup:
   goldmark:
@@ -14,4 +20,38 @@ outputFormats:
     isHTML: true
     mediaType: 'text/html'
 
+params:
+  logo:
+    src: '/images/twitter-iamjerdog.png'
+    top: '90%'
+    left: '80%'
+    width: '15%'
+  reveal_hugo:
+    theme: 'night'
+    margin: 0.1
+    transition: 'slide'
+    transitionSpeed: 'fast'
+    slideNumber: false
+    controls: false
+    hash: true
+    respondToHashChanges: true
+    jumpToSlide: true
+    keyboard: true
+    overview: true
+    fragments: true
+    fragmentInURL: true
+    pause: true
+    progress: true
+    history: true
+    center: true
+    loop: false
+    help: true
+    mouseWheel: false
+    hideAddressBar: true
+    previewLinks: false
+## Custom CSS options
+    custom_css:
+      # Custom CSS file
+      targetPath: "css/custom.css"
+      enableSourceMap: true
 
