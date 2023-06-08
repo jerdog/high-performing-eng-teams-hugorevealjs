@@ -21,11 +21,18 @@ outputFormats:
     mediaType: 'text/html'
 
 params:
+  # Set logo options
   logo:
     src: '/images/twitter-iamjerdog.png'
     top: '90%'
     left: '80%'
     width: '15%'
+  logo-btm-left:
+    src: '/images/circleci-white-horizontal-logo.png'
+    top: '90%'
+    left: '10%'
+    width: '10%'
+    opacity: '0.5'
   reveal_hugo:
     theme: 'night'
     margin: 0.1
