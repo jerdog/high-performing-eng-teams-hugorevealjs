@@ -11,3 +11,10 @@ html.speaker-view .speaker-notes .value {
 html.speaker-view[data-speaker-layout="tall"] .speaker-controls {
     font-size: 1.5rem;
 }
+
+.2col-slide{
+    display: flex; */
+}
+.2col-slide-col{
+    flex: 1;
+} */

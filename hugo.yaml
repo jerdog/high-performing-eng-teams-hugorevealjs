@@ -30,7 +30,7 @@ params:
   logo-btm-left:
     src: '/images/circleci-white-horizontal-logo.png'
     top: '90%'
-    left: '10%'
+    left: '5%'
     width: '10%'
     opacity: '0.5'
   reveal_hugo:
