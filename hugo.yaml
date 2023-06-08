@@ -57,7 +57,7 @@ params:
     hideAddressBar: true
     previewLinks: false
 ## Custom CSS options
-    custom_css:
-      # Custom CSS file
-      targetPath: 'stylesheets/custom.css'
-      enableSourceMap: true
+    # custom_css:
+    #   # Custom CSS file
+    #   targetPath: 'stylesheets/custom.css'
+    #   enableSourceMap: true
