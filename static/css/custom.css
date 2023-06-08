@@ -1,7 +1,9 @@
+/* file location: /static/css/custom.css */
 @import "../reveal-js/dist/theme/template/mixins";
 @import "../reveal-js/dist/theme/template/settings";
 
-$backgroundColor: #23252a;
+/* $backgroundColor: #23252a; */
+$backgroundColor: #fff;
 $mainColor: #fff;
 $headingColor: #fff;
 
@@ -11,10 +13,3 @@ html.speaker-view .speaker-notes .value {
 html.speaker-view[data-speaker-layout="tall"] .speaker-controls {
     font-size: 1.5rem;
 }
-
-.2col-slide{
-    display: flex; 
-}
-.2col-slide-col{
-    flex: 1;
-} 

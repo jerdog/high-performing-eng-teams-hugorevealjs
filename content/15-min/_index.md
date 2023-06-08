@@ -1,6 +1,8 @@
 +++
 title = "High-performing Engineering Teams, and the Holy Grail"
 outputs = ["Reveal"]
+[reveal_hugo]
+custom_css = "css/custom.css"
 +++
 
 ### High-performing Engineering Teams, and the Holy Grail
@@ -24,12 +26,15 @@ But the landscape of tools, platforms, and architectures is constantly evolving.
 
 ---
 
+{{< slide id="bio" transition="zoom" transition-speed="fast" content="inserts.bio" >}}
 <section>
-    <h3>Doing two-column (this headline still full-width)</h3>
     <div class="multiCol">
-        <div class="col">Also works for 3 columns...</div>
-        <div class="col">...as we can show in...</div>
-        <div class="col">...this example here.</div>
+        <div class="col">
+            <h4 style="color: rgb(111, 168, 220);">Jeremy Meiss</h4>
+            <p>Director, DevRel</p>
+            <p>CircleCI</p>
+        </div>
+        <div class="col"><img src="/images/profile-pic.jpg" width="60%"></div>
     </div>
 </section>
 
