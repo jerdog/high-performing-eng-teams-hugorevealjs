@@ -23,15 +23,18 @@ But the landscape of tools, platforms, and architectures is constantly evolving.
 {{% /note %}}
 
 ---
-<div class="2col-slide">
-    <div class="2col-slide-col">
-1
+
+<section>
+    <h3>Doing two-column (this headline still full-width)</h3>
+    <div class="multiCol">
+        <div class="col">Also works for 3 columns...</div>
+        <div class="col">...as we can show in...</div>
+        <div class="col">...this example here.</div>
     </div>
-    <div class="2col-slide-col">
-2
-    </div>
-</div>
+</section>
 
 {{% note %}}
 
 {{% /note %}}
+
+---

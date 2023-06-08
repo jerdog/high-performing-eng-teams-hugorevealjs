@@ -59,6 +59,5 @@ params:
 ## Custom CSS options
     custom_css:
       # Custom CSS file
-      targetPath: "css/custom.css"
+      targetPath: 'stylesheets/custom.css'
       enableSourceMap: true
-

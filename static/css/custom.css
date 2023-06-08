@@ -13,8 +13,8 @@ html.speaker-view[data-speaker-layout="tall"] .speaker-controls {
 }
 
 .2col-slide{
-    display: flex; */
+    display: flex; 
 }
 .2col-slide-col{
     flex: 1;
-} */
+} 

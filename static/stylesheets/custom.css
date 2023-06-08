@@ -1,0 +1,13 @@
+@import "../reveal-js/dist/theme/template/mixins";
+@import "../reveal-js/dist/theme/template/settings";
+
+$backgroundColor: #23252a;
+$mainColor: #fff;
+$headingColor: #fff;
+
+html.speaker-view .speaker-notes .value {
+    font-size: 1.25em !important;
+}
+html.speaker-view[data-speaker-layout="tall"] .speaker-controls {
+    font-size: 1.5rem;
+}
