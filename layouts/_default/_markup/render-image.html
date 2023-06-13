@@ -1,0 +1,11 @@
+<!-- Add captions with markdown render hooks: https://sebastiandedeyne.com/captioned-images-with-markdown-render-hooks-in-hugo/ -->
+{{ if .Title }}
+  <figure>
+    <!-- utilize markdown attributes for custom CSS classes: https://roneo.org/en/hugo-custom-css-classes-images-markdown-attributes/ -->
+    {{ if .IsBlock }}<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}">
+    {{ else }}<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" class="{{ .Attributes.class }}">{{ end }}
+    <figcaption style="font-size: .20em;">{{ .Title }}</figcaption>
+  </figure>
+{{ else }}
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" class="{{ .Attributes.class }}">
+{{ end }}

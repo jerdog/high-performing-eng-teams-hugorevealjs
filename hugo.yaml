@@ -13,6 +13,11 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    parser: # https://roneo.org/en/hugo-custom-css-classes-images-markdown-attributes/
+      wrapStandAloneImageWithinParagraph: false # https://github.com/gohugoio/hugo/releases/tag/v0.108.0
+      attribute:
+        block: true
+        title: true
 
 outputFormats:
   reveal:
@@ -56,6 +61,7 @@ params:
     mouseWheel: false
     hideAddressBar: true
     previewLinks: false
+    load_default_plugins: true
 ## Custom CSS options
     # custom_css:
     #   # Custom CSS file
