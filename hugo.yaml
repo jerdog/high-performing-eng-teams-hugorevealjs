@@ -38,6 +38,9 @@ params:
     left: '5%'
     width: '10%'
     opacity: '0.5'
+  appearance:
+    font: 'Open Sans'
+    font_size: S
   reveal_hugo:
     theme: 'night'
     margin: 0.1

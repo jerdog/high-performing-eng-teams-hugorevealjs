@@ -5,7 +5,7 @@ outputs = ["Reveal"]
 custom_css = "css/custom.css"
 +++
 
-### High-performing Engineering Teams, and the Holy Grail</h3>
+### High-performing Engineering Teams, and the Holy Grail
 ![holy grail pfffft](/images/slides/anim-titleSlide-pfft.gif)
 
 ---
@@ -84,39 +84,326 @@ We don’t believe in one-size-fits-all success metrics for delivery; because ev
 ---
 
 <section>
-    <figure>
-        <img src="/images/slides/not-one-size.jpg">
-        <figcaption style="font-size: .20em;">
-            Image: <a href="https://consumerchoicecenter.org/one-size-fits-all-doesnt-fit-at-all/" target="_blank">Consumer Choice Center</a>
-        </figcaption>
-    </figure>
+<h4>CI/CD Benchmarks for high-performing teams</h4>
+    <div class="multiCol r-stretch">
+        <div class="col">
+            <img src="/images/slides/duration.png" height="60px">
+            <p style="font-size: .5em;">Duration</p>
+        </div>
+        <div class="col">
+            <img src="/images/slides/mttr.png" height="60px">
+            <p style="font-size: .5em;">Mean time to resolve</p>
+        </div>
+        <div class="col">
+            <img src="/images/slides/success-rate.png" height="60px">
+            <p style="font-size: .5em;">Success rate</p>
+        </div>
+        <div class="col">
+            <img src="/images/slides/throughput.png" height="60px">
+            <p style="font-size: .5em;">Throughput</p>
+        </div>
+    </div>
 </section>
 
 {{% note %}}
- 
+This report covers the standard engineering metrics of Duration, Mean time to recovery, Success Rate, and Throughput, plus our recommended benchmarks for each. But the sections have been expanded to show how your team can optimize your practice through team structure, culture, and operational strategy, to ensure you’re maintaining a key ingredient in achieving success: developer happiness.  
 {{% /note %}}
 
 ---
 
-
+![dude this is a Wendy's](/images/slides/pipelines.gif)
+{.r-stretch}
 
 {{% note %}}
- 
+As CI adoption expanded over the last several years, many teams have had a “growth at all costs” mentality. But as the complexity of software systems increased, the cognitive load of maintaining those systems has really become overwhelming for both the devs and ops sides, creating situations where teams were cutting corners. DevOps teams must take away some of the complexity and be in a position to help systems recover quickly from failures. This is why many companies have instituted a Platform team — the need for a dedicated team to support the stability of their application has become obvious.
 {{% /note %}}
 
 ---
 
-
+![head banging good time](/images/slides/head-banging.gif)
+{.r-stretch}
 
 {{% note %}}
- 
+So you probably came to your talk with this question: "How do you achieve elite status through a holistic software delivery practice?" Or it was for the Holy Grail references. Either way, it's a good question. Let's jump into the data
 {{% /note %}}
 
 ---
 
+### Duration
+
+_the foundation of software engineering velocity, measures the average time in minutes required to move a unit of work through your pipeline_
+
+{{% note %}}
+Duration is the foundation of software engineering velocity. It measures the average time in minutes required to move a unit of work through your pipeline. Importantly, a unit of work does not always mean deploying to production – it may be as simple as running a few unit tests on a development branch. It can be best viewed as a proxy for how efficiently your pipelines deliver feedback on the health and quality of your code. 
+{{% /note %}}
+
+---
+
+![efficency](/images/slides/efficiency.gif)
+{.r-stretch}
+
+{{% note %}}
+Duration, then, is best viewed as a proxy for how efficiently your pipelines deliver feedback on the health and quality of your code. The core promise of most software delivery paradigms, from Agile to DevOps, is speed: the ability to take in information from customers or stakeholders and respond quickly and effectively. 
+{{% /note %}}
+
+---
+
+![rejoice rejoice](/images/slides/rejoicing.gif)
+{.r-stretch}
+
+{{% note %}}
+These rapid feedback and delivery cycles don’t just benefit an organization’s end users; they are crucial to keeping developers happy, engaged, and in an uninterrupted state of flow. 
+So what's the ideal duration?
+{{% /note %}}
+
+---
+
+#### Duration Benchmark
+##### <=10 minute builds
+
+*"a good rule of thumb is to keep your builds to no more than ten minutes. Many developers who use CI follow the practice of not moving on to the next task until their most recent checkin integrates successfully. Therefore, builds taking longer than ten minutes can interrupt their flow."*  
+-- **Paul M. Duvall (2007).**  *Continuous Integration: Improving Software Quality and Reducing Risk*
+
+{{% note %}}
+To get the maximum benefit from your workflows, we recommend aiming for a duration of 10 minutes, which is a widely accepted benchmark that dates back to Paul M. Duvall’s influential book on Continuous Integration. At this range, it is possible to generate enough information to feel confident in your code without introducing unnecessary friction in the software delivery process.
+{{% /note %}}
+
+---
+
+#### Duration: What the data shows
+
+![duration](/images/slides/duration-data.png)
+{.r-stretch}
+
+###### Benchmark: 5-10mins
 
 
 {{% note %}}
- 
+Among the workflows observed in our dataset, 50 % completed in 3.3 minutes or less, far below our 10 minute benchmark and nearly 30 seconds faster than previous reports. The fastest 25% of workflows completed in under a minute, and 75% completed in under 9. The avg duration was approx 11 minutes, reflecting the influence of longer-running workflows in the 95th percentile require 27 minutes or more to complete.
 {{% /note %}}
 
+---
+
+#### Improving test coverage
+
+* Add unit, integration, UI, and end-to-end testing across all app layers
+* Incorporate code coverage tools into pipelines to identify inadequate testing
+* Include static and dynamic security scans to catch vulnerabilities
+* Incorporate TDD practices by writing tests during design phase
+
+{{% note %}}
+Many teams continue to bias toward speed rather than robust testing. But, as shown here, the number one opportunity we’ve identified for improving performance across all four software delivery metrics is for organizations to enhance their test suites with more robust test coverage.
+{{% /note %}}
+
+---
+
+![dancing efficiency](/images/slides/dancing-efficiency.gif)
+{.r-stretch}
+
+{{% note %}}
+The path to optimizing your workflow durations is to combine comprehensive testing practices with efficient workflow orchestration. Teams that focus solely on speed not only spend more time rolling back broken updates and debugging in production but also face greater risk to their organizational reputation and stability.
+{{% /note %}}
+
+---
+
+### Mean time to Recovery
+
+_the average time required to go from a failed build signal to a successful pipeline run_
+
+{{% note %}}
+MTTR. This metric is indicative of your team’s resilience and ability to respond quickly and effectively to feedback from your CI system. In other words, mean time to recovery is the best indicator of your organization’s DevOps maturity.
+{{% /note %}}
+
+---
+
+![pipeline time to recovery](/images/slides/time-to-recovery.gif)
+{.r-stretch}
+
+{{% note %}}
+From an end user perspective, and for most organizations, nothing is more important than your team’s ability to recover from a broken build. While customers may not notice the steady stream of granular updates that you ship throughout the week, they will definitely notice when your application goes offline after broken code slips through your test suite.
+{{% /note %}}
+
+---
+
+*"A key part of doing a continuous build is that if the mainline build fails, it needs to be fixed right away. The whole point of working with CI is that you're always developing on a known stable base."*  
+
+-- **Martin Fowler (2006).** *"Continuous Integration."* Web blog post. MartinFowler.com
+
+{{% note %}}
+In a 2006 blog post, Martin Fowler described the north star for software teams’ MTTR: “Fix broken builds immediately.” Does this mean your team should aim for resolving failed workflows within a matter of seconds? Or better yet avoid build failures at all costs? Not at all! Broken builds happen, and with proper tests in place, the information from a red build has as much (if not more) value for development teams as a passing green build.
+{{% /note %}}
+
+---
+
+#### MTTR Benchmark
+
+###### <=60min MTTR on default branches
+
+{{% note %}}
+For this reason, we recommend that you aim to fix broken builds on any branch in under 60 minutes. Depending on the scale of your user base and criticality of your application, your target recovery time may be significantly lower or higher. However, the ability to recover in under an hour is strongly correlated with other indicators of high-performing teams and will allow your organization to avoid the worst outcomes of prolonged failures.
+{{% /note %}}
+
+---
+
+#### MTTR: What the data shows
+
+![mttr-data](/images/slides/mttr-data.png)
+{.r-stretch}
+
+###### Benchmark: 60 mins
+
+{{% note %}}
+On CircleCI, 50% of workflows recovered in 64 minutes or less, very nearly equal to our benchmark of 60 minutes. This was a significant improvement from our previous two reports, which showed median times that were 10 minutes longer, and the most notable change among any of the four metrics in this report's data. The top 25% recovered in 15 minutes or less, and the top 5% recovered in under 5 minutes. 
+{{% /note %}}
+
+---
+
+#### Treat your default branch as the lifeblood of your project
+
+![long live CI/CD](/images/slides/long-live-cicd.gif)
+{.r-stretch}
+
+{{% note %}}
+The first step to lowering recovery times is to treat your default branch as the lifeblood of your project – and by extension, your organization. While red builds are inevitable, getting your code back to green immediately should be everyone’s top priority. With a vigilant culture in place, your organization will be poised to leverage information from your CI pipeline and remediate failures as soon as they arise.
+{{% /note %}}
+
+---
+
+#### Getting to faster recovery times
+
+* Treat your default branch as the lifeblood of your project
+* Set up instant alerts for failed builds using services like Slack, Twilio, or Pagerduty.
+* Write clear, informative error messages for your tests, allowing quick diagnosis
+* Use SSH into the failed build machine to debug in the remote test environment.
+
+{{% note %}}
+Bear in mind that recovery speed is inextricably bound with pipeline duration: the shortest possible time to recovery is the length of your next pipeline run. So these techniques require the previously mentioned optimizations, and then you can start getting to faster recovery times
+{{% /note %}}
+
+---
+
+### Success rate
+
+_number of passing runs divided by the total number of runs over a period of time_
+
+{{% note %}}
+Success rate is another indicator, alongside mean time to recovery, of the stability of your application development process. However, the impact of success rate on both customers and development teams can vary according to a number of factors. Did the failure occur on the default branch or a development branch? Did the workflow involve a deployment? How important is the application or service being tested?
+{{% /note %}}
+
+---
+
+![failed signals are ok](/images/slides/failed-signal-taunting.gif)
+{.r-stretch}
+
+{{% note %}}
+A failed signal is not necessarily indicative that something has gone wrong or there is a problem that needs to be addressed on a deeper level than your standard recovery processes. Far more important is your team’s ability to ingest the signal quickly (duration) and remediate the error effectively (MTTR). Again, a failed workflow that delivers a fast, valuable signal is far more desirable than a passing workflow that offers thin or unreliable information. 
+{{% /note %}}
+
+---
+
+#### Success rate benchmark
+
+###### 90%+ success rate on default branches
+
+{{% note %}}
+We recommend maintaining a success rate of 90% or higher on default branches. This is a reasonable target for the mainline code of a mission-critical app, where changes should be merged only after passing a series of well written tests. Failures on topic branches are generally less disruptive to software delivery than those that occur on the default branch. It's important for your team to set its own benchmark for success on various other branches depending on how you use them. 
+{{% /note %}}
+
+---
+
+#### Success rate: What the data shows
+
+![success-rate-data](/images/slides/success-rate-data.png)
+{.r-stretch}
+
+###### Benchmark: 90%+ on default
+
+{{% note %}}
+Among CircleCI users, success rates on the default branch were 77% on average. On non-default branches, they were 67% on average. Success rates on the default branch have held steady over the past several iterations of our report. While neither number reaches our benchmark of 90%, the pattern of non-default branches having higher numbers of failures indicates that teams are utilizing effective branching patterns to isolate experimental or risky changes from critical mainline code. And while success rates haven’t moved much over the history of this report, recovery times have fallen sharply. This is a welcome sign that organizations are prioritizing iteration and resilience over momentum-killing perfectionism. 
+{{% /note %}}
+
+---
+
+### Throughput
+
+_average number of workflow runs that an organization completes on a given project per day_
+
+{{% note %}}
+Throughput traditionally reflects the number of changes your developers are committing to your codebase in a 24-hour period
+{{% /note %}}
+
+---
+
+![high velocity](/images/slides/high-velocity.gif)
+{.r-stretch}
+
+{{% note %}}
+It is also useful as a measurement of team flow as it tracks how many units of work move through the CI system. When performed at or above recommended levels, throughput puts the “continuous” in continuous delivery — the higher your throughput, the more frequently you are performing work on your application. 
+{{% /note %}}
+
+---
+
+![only a model](/images/slides/only-a-model.gif)
+{.r-stretch}
+
+{{% note %}}
+Of course, throughput also tells you nothing about the quality of work you are performing, so it is important to consider the richness of your test data as well as your performance on other metrics such as success rate and duration to get a complete picture. As with duration, a high throughput score means little if you are frequently pushing poor quality code to users. So what's ideal?
+{{% /note %}}
+
+---
+
+#### Throughput benchmark
+
+{{% fragment %}}It depends.{{% /fragment %}}
+
+{{% note %}}
+Of all the metrics, throughput is the most subjective to organizational goals. A large cloud-native organization actively developing a critical product line will require far higher levels of throughput than a small team maintaining legacy software or niche internal tooling. It really does depend. There's isn't a universally applicable throughput target - it needs to be set according to your internal business requirements. The type of work, the resources available, the expectations of your users all play into it. Far more important than the volume of work you’re doing is the quality and impact of that work. 
+{{% /note %}}
+
+---
+
+#### Throughput: What the data shows
+
+![throughput-data](/images/slides/throughput-data.png)
+{.r-stretch}
+
+###### Benchmark: at the speed of your business
+
+{{% note %}}
+In our data set, the median workflow ran 1.54 times per day, a slight increase from 1.43 times per day in 2022. At the upper end of the spectrum, the top 5% of workflows ran 7 times per day or more, on par with what we’ve seen in previous years. Overall, the average project had 2.93 pipeline runs in 2023 compared to 2.83 in 2022. This uptick in productivity is not especially notable, but when taken in combination with the sharp decrease in MTTR discussed earlier in the report, it may reflect that teams are committing to smaller, more frequent changes to limit the complexity of outages and achieve faster, more consistent feedback on the state of their applications. 
+{{% /note %}}
+
+---
+
+##### Throughput is the most dependent on the other metrics
+
+{{% note %}}
+Of the four metrics measured in this report, throughput is the most dependent on the others.  How long your workflows take to complete, how often those workflows fail, and the amount of time it takes to recover from a failure all affect your developers’ ability to focus on new work and the frequency of their commits. To improve your team’s throughput, first address all the potential underlying factors that can affect team productivity.
+{{% /note %}}
+
+---
+
+![trailing indicators](/images/slides/trailing-indicator.gif)
+{.r-stretch}
+
+{{% note %}}
+Throughput is often a trailing indicator of other changes in your processes and environment. Rather than setting an arbitrary throughput goal, set a goal that reflects your business needs, capture a baseline measurement, and monitor for fluctuations that indicate changes in your team’s ability to do work. Achieving the right level of throughput means staying ahead of customer needs and competitive threats while also continuously validating the health of your application and development process. 
+{{% /note %}}
+
+---
+
+#### High-performing teams in 2023
+
+![high-performing teams](/images/slides/metrics-comparison.png)
+{.r-stretch}
+
+{{% note %}}
+Measuring and then optimizing Duration, Throughput, Mean Time to Recovery, and Success Rate gives teams a tremendous advantage over organizations that do not track these key metrics.
+{{% /note %}}
+
+---
+### Platform Teams, DevOps, and YOU
+
+{{% note %}}
+I'm sure you've all heard by now that DevOps is dead.
+{{% /note %}}
