@@ -1,4 +1,4 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://high-performing-eng-teams.netlify.app/'
 languageCode: 'en-us'
 title: 'High-performing Engineering Teams, and the Holy Grail'
 theme: 'github.com/dzello/reveal-hugo'
