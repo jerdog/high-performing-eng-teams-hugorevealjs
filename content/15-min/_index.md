@@ -450,7 +450,7 @@ Platform engineers abstract the complexity of common DevOps processes into an in
 
 ---
 
-##### Platform Perspective: Duration
+#### Platform Perspective: Duration
 
 * Identify and eliminate impediments to developer velocity
 * Set guardrails and enforce quality standards across projects
@@ -464,7 +464,7 @@ Duration: Developers will naturally gravitate toward speed. And while platform t
 
 ---
 
-##### Platform Perspective: MTTR
+#### Platform Perspective: MTTR
 
 * Ephasise value of deploy-ready, default branches
 * Set up effective monitoring and alerting systems, and track recovery time
@@ -478,7 +478,7 @@ MTTR: Platform teams often form the bridge between an organization’s business 
 
 ---
 
-##### Platform Perspective: Success Rate
+#### Platform Perspective: Success Rate
 
 * With low success rates, look at MTTR and shorten recovery time first
 * Set baseline success rate, then aim for continuous improvement, looking for flaky tests or gaps in test coverage
@@ -490,9 +490,9 @@ Success rate: It can be tempting as an organization to chase a success rate of 1
 
 ---
 
-##### Platform Perspective: Throughput
+#### Platform Perspective: Throughput
 
-* Map goals to reality of internal & external business situations, i.e. customer expectations, competitive landscape, codebase complexity, etc.
+* Map goals to reality of internal & external business situations
 * Capture a baseline, monitor for deviations
 * Alleviate as much developer cognitive load from day-to-day work
 
@@ -507,7 +507,7 @@ Throughput: Platform engineering exists primarily to remove blockers from develo
 ![2023 state of software delivery report](/images/slides/sosdr-qrcode.png)
 {.r-stretch}
 
-##### circle.ci/sosdr2023
+##### circle.ci/sosdr2023}
 
 ---
 
@@ -515,16 +515,16 @@ Throughput: Platform engineering exists primarily to remove blockers from develo
 <section>
     <div class="multiCol">
         <div class="col">
-            <h4>Thank You.</h4>
+            <h3 style="color: #04aa51;">Thank You.</h3>
             <p style="font-size: .75em;"></p>
             <p style="font-size: .5em;">For feedback and swag: <font style="color: rgb(111, 168, 220);">circle.ci/jeremy</font></p>
         </div>
         <div class="col" align="left" style="font-size: .5em;">
-            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
-            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me
-            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me
-            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me
-            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me
+            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle; margin: 20px;">timeline.jerdog.me<br />
+            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle; margin: 20px;">@IAmJerdog<br />
+            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle; margin: 20px;">@jerdog<br />
+            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 20px;">/in/jeremymeiss<br />
+            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle; margin: 20px;">@jerdog@hachyderm.io<br />
         </div>
     </div>
 </section>
