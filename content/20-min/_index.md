@@ -172,6 +172,15 @@ So what's the ideal duration?
 
 ---
 
+![pipeline optimization](/images/slides/continuous-stuff.gif)
+{.r-stretch}
+
+{{% note %}}
+Yet an exclusive focus on speed often comes at the expense of stability. A pipeline optimized to deliver unverified changes is nothing more than a highly efficient way of shipping bugs to users and exposing your organization to unnecessary risk. To be able to move quickly with confidence, you need your pipeline to guard against all potential points of failure and to deliver actionable information that allows you to remediate flaws immediately, before reaching prod.
+{{% /note %}}
+
+---
+
 #### Duration Benchmark
 ##### <=10 minute builds
 
@@ -207,6 +216,19 @@ Among the workflows observed in our dataset, 50 % completed in 3.3 minutes or le
 
 {{% note %}}
 Many teams continue to bias toward speed rather than robust testing. But, as shown here, the number one opportunity we’ve identified for improving performance across all four software delivery metrics is for organizations to enhance their test suites with more robust test coverage.
+{{% /note %}}
+
+---
+
+#### Optimizing your pipelines
+
+* Use test splitting and parallelism to execute multiple tests simultaneously
+* Cache dependencies and other data to avoid rebuilding unchanged portions
+* Use Docker images custom made for CI environments
+* Choose the right machine size for your needs
+
+{{% note %}}
+Balancing workflow speed and test coverage is ultimately a matter of prioritization: which features are part of the critical path? Where can you afford more experimentation and risk? Once you have buy-in from important stakeholders on how to best  balance test coverage and workflow speed, you can optimize your workflow duration with these techniques: Once you have buy-in from important stakeholders on how to best  balance test coverage and workflow speed, you can optimize your workflow duration with these techniques:
 {{% /note %}}
 
 ---
@@ -414,6 +436,10 @@ Throughput is often a trailing indicator of other changes in your processes and 
 {{% note %}}
 Measuring and then optimizing Duration, Throughput, Mean Time to Recovery, and Success Rate gives teams a tremendous advantage over organizations that do not track these key metrics.
 {{% /note %}}
+
+---
+
+### Platform teams and their impact
 
 ---
 ### Platform Teams, DevOps, and YOU

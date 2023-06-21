@@ -40,10 +40,6 @@ But the landscape of tools, platforms, and architectures is constantly evolving.
     </div>
 </section>
 
-{{% note %}}
-
-{{% /note %}}
-
 ---
 
 #### So back to the tech industry...
@@ -402,6 +398,7 @@ Measuring and then optimizing Duration, Throughput, Mean Time to Recovery, and S
 {{% /note %}}
 
 ---
+
 ### Platform Teams, DevOps, and YOU
 
 {{% note %}}
