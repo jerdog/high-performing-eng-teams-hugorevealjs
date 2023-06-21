@@ -555,16 +555,16 @@ Throughput: Platform engineering exists primarily to remove blockers from develo
 <section>
     <div class="multiCol">
         <div class="col">
-            <h4>Thank You.</h4>
+            <h3 style="color: #04aa51;">Thank You.</h3>
             <p style="font-size: .75em;"></p>
             <p style="font-size: .5em;">For feedback and swag: <font style="color: rgb(111, 168, 220);">circle.ci/jeremy</font></p>
         </div>
         <div class="col" align="left" style="font-size: .5em;">
-            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
-            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
-            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
-            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
-            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
+            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle; margin: 20px;">timeline.jerdog.me<br />
+            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle; margin: 20px;">@IAmJerdog<br />
+            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle; margin: 20px;">@jerdog<br />
+            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 20px;">/in/jeremymeiss<br />
+            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle; margin: 20px;">@jerdog@hachyderm.io<br />
         </div>
     </div>
 </section>
