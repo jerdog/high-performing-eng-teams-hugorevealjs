@@ -561,10 +561,10 @@ Throughput: Platform engineering exists primarily to remove blockers from develo
         </div>
         <div class="col" align="left" style="font-size: .5em;">
             <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
-            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me
-            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me
-            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me
-            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me
+            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
+            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
+            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
+            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle;">timeline.jerdog.me<br />
         </div>
     </div>
 </section>
