@@ -181,11 +181,15 @@ So what is the ideal duration?
 
 ---
 
-#### Duration Benchmark
-##### <=10 minute builds
+<section>
+<h4>Duration Benchmark</h4>
+<h5><=10 minute builds</h5>
 
-*"a good rule of thumb is to keep your builds to no more than ten minutes. Many developers who use CI follow the practice of not moving on to the next task until their most recent checkin integrates successfully. Therefore, builds taking longer than ten minutes can interrupt their flow."*  
+<p style="font-size: .75em; font-style: italic;">"a good rule of thumb is to keep your builds to no more than ten minutes. Many developers who use CI follow the practice of not moving on to the next task until their most recent check-in integrates successfully. Therefore, builds taking longer than ten minutes can interrupt their flow."</p>
+
 -- **Paul M. Duvall (2007).**  *Continuous Integration: Improving Software Quality and Reducing Risk*
+
+</section>
 
 {{% note %}}
 To get the maximum benefit from your workflows, we recommend aiming for a duration of 10 minutes, which is a widely accepted benchmark that dates back to Paul M. Duvall’s influential book on Continuous Integration. At this range, it is possible to generate enough information to feel confident in your code without introducing unnecessary friction in the software delivery process.
@@ -248,9 +252,13 @@ From an end user perspective, and for most organizations, nothing is more import
 
 ---
 
-*"A key part of doing a continuous build is that if the mainline build fails, it needs to be fixed right away. The whole point of working with CI is that you're always developing on a known stable base."*  
+<section>
+
+<p style="font-size: 1em; font-style: italic;">"A key part of doing a continuous build is that if the mainline build fails, it needs to be fixed right away. The whole point of working with CI is that you're always developing on a known stable base."</p>
 
 -- **Martin Fowler (2006).** *"Continuous Integration."* Web blog post. MartinFowler.com
+
+</section>
 
 {{% note %}}
 In a 2006 blog post, Martin Fowler described the north star for software teams’ MTTR: “Fix broken builds immediately.” Does this mean your team should aim for resolving failed workflows within a matter of seconds? Or better yet avoid build failures at all costs? 
@@ -323,6 +331,8 @@ Success rate is another indicator, alongside mean time to recovery, of the stabi
 {{% /note %}}
 
 ---
+
+#### Failed signals are not all bad
 
 ![failed signals are ok](/images/slides/failed-signal-taunting.gif)
 {.r-stretch}
@@ -486,7 +496,7 @@ Platform engineers abstract the complexity of common DevOps processes into an in
 
 ---
 
-##### Platform Perspective: Duration
+#### Platform Perspective: Duration
 
 * Identify and eliminate impediments to developer velocity
 * Set guardrails and enforce quality standards across projects
@@ -500,7 +510,7 @@ Duration: Developers will naturally gravitate toward speed. And while platform t
 
 ---
 
-##### Platform Perspective: MTTR
+#### Platform Perspective: MTTR
 
 * Ephasise value of deploy-ready, default branches
 * Set up effective monitoring and alerting systems, and track recovery time
@@ -514,7 +524,7 @@ MTTR: Platform teams often form the bridge between an organization’s business 
 
 ---
 
-##### Platform Perspective: Success Rate
+#### Platform Perspective: Success Rate
 
 * With low success rates, look at MTTR and shorten recovery time first
 * Set baseline success rate, then aim for continuous improvement, looking for flaky tests or gaps in test coverage
@@ -526,7 +536,7 @@ Success rate: It can be tempting as an organization to chase a success rate of 1
 
 ---
 
-##### Platform Perspective: Throughput
+#### Platform Perspective: Throughput
 
 * Map goals to reality of internal & external business situations, i.e. customer expectations, competitive landscape, codebase complexity, etc.
 * Capture a baseline, monitor for deviations
