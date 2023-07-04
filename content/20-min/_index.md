@@ -166,8 +166,17 @@ Duration, then, is best viewed as a proxy for how efficiently your pipelines del
 {.r-stretch}
 
 {{% note %}}
-These rapid feedback and delivery cycles don’t just benefit an organization’s end users; they are crucial to keeping developers happy, engaged, and in an uninterrupted state of flow. 
-So what's the ideal duration?
+These rapid feedback and delivery cycles don’t just benefit an organization’s end users; they are crucial to keeping developers happy, engaged, and in an uninterrupted state of flow.
+{{% /note %}}
+
+---
+
+![continuous stuff](/images/slides/continuous-stuff.gif)
+{.r-stretch}
+
+{{% note %}}
+Yet an exclusive focus on speed often comes at the expense of stability. A pipeline optimized to deliver unverified changes is nothing more than a highly efficient way of shipping bugs to users and exposing your organization to unnecessary risk. To be able to move quickly with confidence, you need your pipeline to guard against all potential points of failure and to deliver actionable information that allows you to remediate flaws immediately, before reaching prod.
+So what is the ideal duration?
 {{% /note %}}
 
 ---
@@ -211,6 +220,19 @@ Many teams continue to bias toward speed rather than robust testing. But, as sho
 
 ---
 
+#### Optimizing your pipelines
+
+* Use test-splitting and parallelism to execute multiple tests simultaneously
+* Cache dependencies and other data to avoid rebuilding unchanged portions
+* Use Docker images optimized for CI
+* Choose the right machine size for your needs
+
+{{% note %}}
+Balancing workflow speed and test coverage is ultimately a matter of prioritization: which features are part of the critical path? Where can you afford more experimentation and risk? Once you have buy-in from important stakeholders on how to best  balance test coverage and workflow speed, you can optimize your workflow duration with these techniques: Once you have buy-in from important stakeholders on how to best  balance test coverage and workflow speed, you can optimize your workflow duration with these techniques:
+{{% /note %}}
+
+---
+
 ![dancing efficiency](/images/slides/dancing-efficiency.gif)
 {.r-stretch}
 
@@ -244,7 +266,16 @@ From an end user perspective, and for most organizations, nothing is more import
 -- **Martin Fowler (2006).** *"Continuous Integration."* Web blog post. MartinFowler.com
 
 {{% note %}}
-In a 2006 blog post, Martin Fowler described the north star for software teams’ MTTR: “Fix broken builds immediately.” Does this mean your team should aim for resolving failed workflows within a matter of seconds? Or better yet avoid build failures at all costs? Not at all! Broken builds happen, and with proper tests in place, the information from a red build has as much (if not more) value for development teams as a passing green build.
+In a 2006 blog post, Martin Fowler described the north star for software teams’ MTTR: “Fix broken builds immediately.” Does this mean your team should aim for resolving failed workflows within a matter of seconds? Or better yet avoid build failures at all costs? 
+{{% /note %}}
+
+---
+
+![build errors](/images/slides/build-errors.gif)
+{.r-stretch}
+
+{{% note %}}
+Not at all! Broken builds happen, and with proper tests in place, the information from a red build has as much (if not more) value for development teams as a passing green build.
 {{% /note %}}
 
 ---
