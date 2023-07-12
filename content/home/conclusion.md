@@ -1,8 +1,33 @@
 +++
-title = "My presentation"
+title = "High-performing Engineering Teams, and the Holy Grail"
 outputs = ["Reveal"]
+[reveal_hugo]
+custom_css = "css/custom.css"
 +++
 
-# Hello world conclusion
+#### 2023 State of Software Delivery Report
 
-This is the last slide.
+![2023 state of software delivery report](/images/slides/sosdr-qrcode.png)
+{.r-stretch}
+
+##### circle.ci/sosdr2023}
+
+---
+
+{{< slide id="end" >}}
+<section>
+    <div class="multiCol">
+        <div class="col">
+            <h3 style="color: #04aa51;">Thank You.</h3>
+            <p style="font-size: .75em;"></p>
+            <p style="font-size: .5em;">For feedback and swag: <font style="color: rgb(111, 168, 220);">circle.ci/jeremy</font></p>
+        </div>
+        <div class="col" align="left" style="font-size: .5em;">
+            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle; margin: 20px;">timeline.jerdog.me<br />
+            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle; margin: 20px;">@IAmJerdog<br />
+            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle; margin: 20px;">@jerdog<br />
+            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 20px;">/in/jeremymeiss<br />
+            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle; margin: 20px;">@jerdog@hachyderm.io<br />
+        </div>
+    </div>
+</section>

@@ -1,8 +1,9 @@
 +++
 title = "High-performing Engineering Teams, and the Holy Grail"
 outputs = ["Reveal"]
+[reveal_hugo]
+custom_css = "css/custom.css"
 +++
 
-# Hello world
-
-This is my first slide.
+### High-performing Engineering Teams, and the Holy Grail
+![holy grail pfffft](/images/slides/anim-titleSlide-pfft.gif)
