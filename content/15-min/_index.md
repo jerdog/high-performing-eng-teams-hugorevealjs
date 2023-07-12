@@ -61,6 +61,15 @@ Amidst this environment, stability and reliability have become increasingly impo
 
 ---
 
+![dude this is a Wendy's](/images/slides/pipelines.gif)
+{.r-stretch}
+
+{{% note %}}
+As CI adoption expanded over the last several years, many teams have had a “growth at all costs” mentality. But as the complexity of software systems increased, the cognitive load of maintaining those systems has really become overwhelming for both the devs and ops sides, creating situations where teams were cutting corners. DevOps teams must take away some of the complexity and be in a position to help systems recover quickly from failures. This is why many companies have instituted a Platform team — the need for a dedicated team to support the stability of their application has become obvious.
+{{% /note %}}
+
+---
+
 ![state-of-reports](/images/slides/state-of-reports.png)
 {.r-stretch}
 
@@ -103,15 +112,6 @@ We don’t believe in one-size-fits-all success metrics for delivery; because ev
 
 {{% note %}}
 This report covers the standard engineering metrics of Duration, Mean time to recovery, Success Rate, and Throughput, plus our recommended benchmarks for each. But the sections have been expanded to show how your team can optimize your practice through team structure, culture, and operational strategy, to ensure you’re maintaining a key ingredient in achieving success: developer happiness.  
-{{% /note %}}
-
----
-
-![dude this is a Wendy's](/images/slides/pipelines.gif)
-{.r-stretch}
-
-{{% note %}}
-As CI adoption expanded over the last several years, many teams have had a “growth at all costs” mentality. But as the complexity of software systems increased, the cognitive load of maintaining those systems has really become overwhelming for both the devs and ops sides, creating situations where teams were cutting corners. DevOps teams must take away some of the complexity and be in a position to help systems recover quickly from failures. This is why many companies have instituted a Platform team — the need for a dedicated team to support the stability of their application has become obvious.
 {{% /note %}}
 
 ---
