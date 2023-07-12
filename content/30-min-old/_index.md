@@ -138,7 +138,7 @@ As CI adoption expanded over the last several years, many teams have had a “gr
 {.r-stretch}
 
 {{% note %}}
-So you probably came to your talk with this question: "How do you achieve elite status through a holistic software delivery practice?" Or it was for the Holy Grail references. Either way, it's a good question. Let's jump into the data
+So you probably came to your talk with this question: "How do you achieve elite status through a holistic software delivery practice?" Or it was for the Holy Grail references. Either way, it's a good question. Let's jump into the data.
 {{% /note %}}
 
 ---
@@ -148,7 +148,7 @@ So you probably came to your talk with this question: "How do you achieve elite 
 _the foundation of software engineering velocity, measures the average time in minutes required to move a unit of work through your pipeline_
 
 {{% note %}}
-Duration is the foundation of software engineering velocity. It measures the average time in minutes required to move a unit of work through your pipeline. Importantly, a unit of work does not always mean deploying to production – it may be as simple as running a few unit tests on a development branch. It can be best viewed as a proxy for how efficiently your pipelines deliver feedback on the health and quality of your code. 
+Importantly, a unit of work does not always mean deploying to production – it may be as simple as running a few unit tests on a development branch. It can be best viewed as a proxy for how efficiently your pipelines deliver feedback on the health and quality of your code. 
 {{% /note %}}
 
 ---
@@ -166,26 +166,30 @@ Duration, then, is best viewed as a proxy for how efficiently your pipelines del
 {.r-stretch}
 
 {{% note %}}
-These rapid feedback and delivery cycles don’t just benefit an organization’s end users; they are crucial to keeping developers happy, engaged, and in an uninterrupted state of flow. 
-So what's the ideal duration?
+These rapid feedback and delivery cycles don’t just benefit an organization’s end users; they are crucial to keeping developers happy, engaged, and in an uninterrupted state of flow.
 {{% /note %}}
 
 ---
 
-![pipeline optimization](/images/slides/continuous-stuff.gif)
+![continuous stuff](/images/slides/continuous-stuff.gif)
 {.r-stretch}
 
 {{% note %}}
 Yet an exclusive focus on speed often comes at the expense of stability. A pipeline optimized to deliver unverified changes is nothing more than a highly efficient way of shipping bugs to users and exposing your organization to unnecessary risk. To be able to move quickly with confidence, you need your pipeline to guard against all potential points of failure and to deliver actionable information that allows you to remediate flaws immediately, before reaching prod.
+So what is the ideal duration?
 {{% /note %}}
 
 ---
 
-#### Duration Benchmark
-##### <=10 minute builds
+<section>
+<h4>Duration Benchmark</h4>
+<h5><=10 minute builds</h5>
 
-*"a good rule of thumb is to keep your builds to no more than ten minutes. Many developers who use CI follow the practice of not moving on to the next task until their most recent checkin integrates successfully. Therefore, builds taking longer than ten minutes can interrupt their flow."*  
+<p style="font-size: .75em; font-style: italic;">"a good rule of thumb is to keep your builds to no more than ten minutes. Many developers who use CI follow the practice of not moving on to the next task until their most recent check-in integrates successfully. Therefore, builds taking longer than ten minutes can interrupt their flow."</p>
+
 -- **Paul M. Duvall (2007).**  *Continuous Integration: Improving Software Quality and Reducing Risk*
+
+</section>
 
 {{% note %}}
 To get the maximum benefit from your workflows, we recommend aiming for a duration of 10 minutes, which is a widely accepted benchmark that dates back to Paul M. Duvall’s influential book on Continuous Integration. At this range, it is possible to generate enough information to feel confident in your code without introducing unnecessary friction in the software delivery process.
@@ -228,7 +232,7 @@ Many teams continue to bias toward speed rather than robust testing. But, as sho
 * Choose the right machine size for your needs
 
 {{% note %}}
-Balancing workflow speed and test coverage is ultimately a matter of prioritization: which features are part of the critical path? Where can you afford more experimentation and risk? Once you have buy-in from important stakeholders on how to best  balance test coverage and workflow speed, you can optimize your workflow duration with these techniques: Once you have buy-in from important stakeholders on how to best  balance test coverage and workflow speed, you can optimize your workflow duration with these techniques:
+Once you have buy-in from important stakeholders on how to best  balance test coverage and workflow speed, you can optimize your workflow duration with these techniques:
 {{% /note %}}
 
 ---
@@ -237,7 +241,7 @@ Balancing workflow speed and test coverage is ultimately a matter of prioritizat
 {.r-stretch}
 
 {{% note %}}
-The path to optimizing your workflow durations is to combine comprehensive testing practices with efficient workflow orchestration. Teams that focus solely on speed not only spend more time rolling back broken updates and debugging in production but also face greater risk to their organizational reputation and stability.
+Teams that focus solely on speed not only spend more time rolling back broken updates and debugging in production but also face greater risk to their organizational reputation and stability. So the path to optimizing your workflow durations is to combine comprehensive testing practices with efficient workflow orchestration.
 {{% /note %}}
 
 ---
@@ -261,12 +265,25 @@ From an end user perspective, and for most organizations, nothing is more import
 
 ---
 
-*"A key part of doing a continuous build is that if the mainline build fails, it needs to be fixed right away. The whole point of working with CI is that you're always developing on a known stable base."*  
+<section>
+
+<p style="font-size: 1em; font-style: italic;">"A key part of doing a continuous build is that if the mainline build fails, it needs to be fixed right away. The whole point of working with CI is that you're always developing on a known stable base."</p>
 
 -- **Martin Fowler (2006).** *"Continuous Integration."* Web blog post. MartinFowler.com
 
+</section>
+
 {{% note %}}
-In a 2006 blog post, Martin Fowler described the north star for software teams’ MTTR: “Fix broken builds immediately.” Does this mean your team should aim for resolving failed workflows within a matter of seconds? Or better yet avoid build failures at all costs? Not at all! Broken builds happen, and with proper tests in place, the information from a red build has as much (if not more) value for development teams as a passing green build.
+In a 2006 blog post, Martin Fowler described the north star for software teams’ MTTR: “Fix broken builds immediately.” Does this mean your team should aim for resolving failed workflows within a matter of seconds? Or better yet avoid build failures at all costs? 
+{{% /note %}}
+
+---
+
+![build errors](/images/slides/build-errors.gif)
+{.r-stretch}
+
+{{% note %}}
+Not at all! Broken builds happen, and with proper tests in place, the information from a red build has as much (if not more) value for development teams as a passing green build.
 {{% /note %}}
 
 ---
@@ -289,7 +306,21 @@ For this reason, we recommend that you aim to fix broken builds on any branch in
 ###### Benchmark: 60 mins
 
 {{% note %}}
-On CircleCI, 50% of workflows recovered in 64 minutes or less, very nearly equal to our benchmark of 60 minutes. This was a significant improvement from our previous two reports, which showed median times that were 10 minutes longer, and the most notable change among any of the four metrics in this report's data. The top 25% recovered in 15 minutes or less, and the top 5% recovered in under 5 minutes. 
+On CircleCI, the top 25% recovered in 15 minutes or less, and the top 5% recovered in under 5 minutes. However, 50% of workflows recovered in 64 minutes or less, very nearly equal to our benchmark of 60 minutes. This was a significant improvement from our previous two reports, which showed median times that were 10 minutes longer, and the most notable (and significant) change among any of the four metrics in this report's data. So what's driving that change? 
+{{% /note %}}
+
+---
+
+#### Two factors driving faster MTTR
+
+* Teams forced to prioritize product stability and reliability over growth
+* Increased reliance on platform engineering teams for steady and resilient pipelines
+
+{{% note %}}
+We suggest there are two factors at play:
+- Economic pressures in the macro environment, coupled with rising competition in the micro environment....
+- High performers have increased reliance......
+So the first step to lowering recovery times....
 {{% /note %}}
 
 ---
@@ -308,7 +339,7 @@ The first step to lowering recovery times is to treat your default branch as the
 #### Getting to faster recovery times
 
 * Treat your default branch as the lifeblood of your project
-* Set up instant alerts for failed builds using services like Slack, Twilio, or Pagerduty.
+* Set up instant alerts for failed builds using services like Slack, Twilio, Pagerduty.
 * Write clear, informative error messages for your tests, allowing quick diagnosis
 * Use SSH into the failed build machine to debug in the remote test environment.
 
@@ -327,6 +358,8 @@ Success rate is another indicator, alongside mean time to recovery, of the stabi
 {{% /note %}}
 
 ---
+
+#### Failed signals are not all bad
 
 ![failed signals are ok](/images/slides/failed-signal-taunting.gif)
 {.r-stretch}
@@ -490,7 +523,7 @@ Platform engineers abstract the complexity of common DevOps processes into an in
 
 ---
 
-##### Platform Perspective: Duration
+#### Platform Perspective: Duration
 
 * Identify and eliminate impediments to developer velocity
 * Set guardrails and enforce quality standards across projects
@@ -504,7 +537,7 @@ Duration: Developers will naturally gravitate toward speed. And while platform t
 
 ---
 
-##### Platform Perspective: MTTR
+#### Platform Perspective: MTTR
 
 * Ephasise value of deploy-ready, default branches
 * Set up effective monitoring and alerting systems, and track recovery time
@@ -518,7 +551,7 @@ MTTR: Platform teams often form the bridge between an organization’s business 
 
 ---
 
-##### Platform Perspective: Success Rate
+#### Platform Perspective: Success Rate
 
 * With low success rates, look at MTTR and shorten recovery time first
 * Set baseline success rate, then aim for continuous improvement, looking for flaky tests or gaps in test coverage
@@ -530,7 +563,7 @@ Success rate: It can be tempting as an organization to chase a success rate of 1
 
 ---
 
-##### Platform Perspective: Throughput
+#### Platform Perspective: Throughput
 
 * Map goals to reality of internal & external business situations, i.e. customer expectations, competitive landscape, codebase complexity, etc.
 * Capture a baseline, monitor for deviations
