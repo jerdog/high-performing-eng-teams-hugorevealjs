@@ -127,7 +127,7 @@ So you probably came to your talk with this question: "How do you achieve elite 
 
 ### Duration
 
-_the foundation of software engineering velocity, measures the average time in minutes required to move a unit of work through your pipeline_
+<p style="font-size: .75em; font-style: italic;">the foundation of software engineering velocity, measures the average time in minutes required to move a unit of work through your pipeline</p>
 
 {{% note %}}
 Duration is the foundation of software engineering velocity. It measures the average time in minutes required to move a unit of work through your pipeline. Importantly, a unit of work does not always mean deploying to production – it may be as simple as running a few unit tests on a development branch. It can be best viewed as a proxy for how efficiently your pipelines deliver feedback on the health and quality of your code. 
@@ -524,14 +524,17 @@ Throughput: Platform engineering exists primarily to remove blockers from develo
         <div class="col">
             <h3 style="color: #04aa51;">Thank You.</h3>
             <p style="font-size: .75em;"></p>
-            <p style="font-size: .5em;">For feedback and swag: <font style="color: rgb(111, 168, 220);">circle.ci/jeremy</font></p>
+            <p style="font-size: .5em;">For feedback and swag: <font style="color: rgb(111, 168, 220);"><br />
+            <img src="/images/qrcode-cci-jeremy.png"><br />
+            <strong>circle.ci/jeremy</strong></font></p>
         </div>
+        <div class="col" align="center"></div>
         <div class="col" align="left" style="font-size: .5em;">
-            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle; margin: 20px;">timeline.jerdog.me<br />
-            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle; margin: 20px;">@IAmJerdog<br />
-            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle; margin: 20px;">@jerdog<br />
-            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 20px;">/in/jeremymeiss<br />
-            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle; margin: 20px;">@jerdog@hachyderm.io<br />
+            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle; margin: 10px;">timeline.jerdog.me<br />
+            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle; margin: 10px;">@IAmJerdog<br />
+            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle; margin: 10px;">@jerdog<br />
+            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 10px;">/in/jeremymeiss<br />
+            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle; margin: 10px;">@jerdog@hachyderm.io
         </div>
     </div>
 </section>

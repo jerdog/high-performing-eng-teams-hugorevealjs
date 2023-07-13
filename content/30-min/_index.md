@@ -145,7 +145,7 @@ So you probably came to your talk with this question: "How do you achieve elite 
 
 ### Duration
 
-_the foundation of software engineering velocity, measures the average time in minutes required to move a unit of work through your pipeline_
+<p style="font-size: .75em; font-style: italic;">the foundation of software engineering velocity, measures the average time in minutes required to move a unit of work through your pipeline</p>
 
 {{% note %}}
 Duration is the foundation of software engineering velocity. It measures the average time in minutes required to move a unit of work through your pipeline. Importantly, a unit of work does not always mean deploying to production – it may be as simple as running a few unit tests on a development branch. It can be best viewed as a proxy for how efficiently your pipelines deliver feedback on the health and quality of your code. 
@@ -181,11 +181,15 @@ Yet an exclusive focus on speed often comes at the expense of stability. A pipel
 
 ---
 
-#### Duration Benchmark
-##### <=10 minute builds
+<section>
+<h4>Duration Benchmark</h4>
+<h5><=10 minute builds</h5>
 
-*"a good rule of thumb is to keep your builds to no more than ten minutes. Many developers who use CI follow the practice of not moving on to the next task until their most recent checkin integrates successfully. Therefore, builds taking longer than ten minutes can interrupt their flow."*  
+<p style="font-size: .75em; font-style: italic;">"a good rule of thumb is to keep your builds to no more than ten minutes. Many developers who use CI follow the practice of not moving on to the next task until their most recent check-in integrates successfully. Therefore, builds taking longer than ten minutes can interrupt their flow."</p>
+
 -- **Paul M. Duvall (2007).**  *Continuous Integration: Improving Software Quality and Reducing Risk*
+
+</section>
 
 {{% note %}}
 To get the maximum benefit from your workflows, we recommend aiming for a duration of 10 minutes, which is a widely accepted benchmark that dates back to Paul M. Duvall’s influential book on Continuous Integration. At this range, it is possible to generate enough information to feel confident in your code without introducing unnecessary friction in the software delivery process.
@@ -198,7 +202,7 @@ To get the maximum benefit from your workflows, we recommend aiming for a durati
 ![duration](/images/slides/duration-data.png)
 {.r-stretch}
 
-###### Benchmark: 5-10mins
+##### Benchmark: 5-10mins
 
 
 {{% note %}}
@@ -209,8 +213,8 @@ Among the workflows observed in our dataset, 50 % completed in 3.3 minutes or le
 
 #### Improving test coverage
 
-* Add unit, integration, UI, and end-to-end testing across all app layers
-* Incorporate code coverage tools into pipelines to identify inadequate testing
+* Add unit, integration, UI, end-to-end testing across all app layers
+* Add code coverage into pipelines to identify inadequate testing
 * Include static and dynamic security scans to catch vulnerabilities
 * Incorporate TDD practices by writing tests during design phase
 
@@ -222,8 +226,8 @@ Many teams continue to bias toward speed rather than robust testing. But, as sho
 
 #### Optimizing your pipelines
 
-* Use test splitting and parallelism to execute multiple tests simultaneously
-* Cache dependencies and other data to avoid rebuilding unchanged portions
+* Use test splitting & parallelism for simultaneous multiple tests
+* Cache dependencies & data to avoid rebuilding unchanged code
 * Use Docker images custom made for CI environments
 * Choose the right machine size for your needs
 
@@ -244,7 +248,7 @@ The path to optimizing your workflow durations is to combine comprehensive testi
 
 ### Mean time to Recovery
 
-_the average time required to go from a failed build signal to a successful pipeline run_
+<p style="font-size: .75em; font-style: italic;">the average time required to go from a failed build signal to a successful pipeline run</p>
 
 {{% note %}}
 MTTR. This metric is indicative of your team’s resilience and ability to respond quickly and effectively to feedback from your CI system. In other words, mean time to recovery is the best indicator of your organization’s DevOps maturity.
@@ -261,9 +265,13 @@ From an end user perspective, and for most organizations, nothing is more import
 
 ---
 
-*"A key part of doing a continuous build is that if the mainline build fails, it needs to be fixed right away. The whole point of working with CI is that you're always developing on a known stable base."*  
+<section>
+
+<p style="font-size: .75em; font-style: italic;">"A key part of doing a continuous build is that if the mainline build fails, it needs to be fixed right away. The whole point of working with CI is that you're always developing on a known stable base."</p> 
 
 -- **Martin Fowler (2006).** *"Continuous Integration."* Web blog post. MartinFowler.com
+
+</section>
 
 {{% note %}}
 In a 2006 blog post, Martin Fowler described the north star for software teams’ MTTR: “Fix broken builds immediately.” Does this mean your team should aim for resolving failed workflows within a matter of seconds? Or better yet avoid build failures at all costs? Not at all! Broken builds happen, and with proper tests in place, the information from a red build has as much (if not more) value for development teams as a passing green build.
@@ -273,7 +281,7 @@ In a 2006 blog post, Martin Fowler described the north star for software teams�
 
 #### MTTR Benchmark
 
-###### <=60min MTTR on default branches
+##### <=60min MTTR on default branches
 
 {{% note %}}
 For this reason, we recommend that you aim to fix broken builds on any branch in under 60 minutes. Depending on the scale of your user base and criticality of your application, your target recovery time may be significantly lower or higher. However, the ability to recover in under an hour is strongly correlated with other indicators of high-performing teams and will allow your organization to avoid the worst outcomes of prolonged failures.
@@ -286,7 +294,7 @@ For this reason, we recommend that you aim to fix broken builds on any branch in
 ![mttr-data](/images/slides/mttr-data.png)
 {.r-stretch}
 
-###### Benchmark: 60 mins
+##### Benchmark: 60 mins
 
 {{% note %}}
 On CircleCI, 50% of workflows recovered in 64 minutes or less, very nearly equal to our benchmark of 60 minutes. This was a significant improvement from our previous two reports, which showed median times that were 10 minutes longer, and the most notable change among any of the four metrics in this report's data. The top 25% recovered in 15 minutes or less, and the top 5% recovered in under 5 minutes. 
@@ -307,10 +315,10 @@ The first step to lowering recovery times is to treat your default branch as the
 
 #### Getting to faster recovery times
 
-* Treat your default branch as the lifeblood of your project
-* Set up instant alerts for failed builds using services like Slack, Twilio, or Pagerduty.
-* Write clear, informative error messages for your tests, allowing quick diagnosis
-* Use SSH into the failed build machine to debug in the remote test environment.
+* Treat default branch as the lifeblood of your project
+* Set up instant alerts for failed builds (Slack, Pagerduty, etc.)
+* Write clear, informative error messages for your tests
+* SSH into the failed build machine to debug remote test env
 
 {{% note %}}
 Bear in mind that recovery speed is inextricably bound with pipeline duration: the shortest possible time to recovery is the length of your next pipeline run. So these techniques require the previously mentioned optimizations, and then you can start getting to faster recovery times
@@ -320,7 +328,7 @@ Bear in mind that recovery speed is inextricably bound with pipeline duration: t
 
 ### Success rate
 
-_number of passing runs divided by the total number of runs over a period of time_
+<p style="font-size: .75em; font-style: italic;">number of passing runs divided by the total number of runs over a period of time</p>
 
 {{% note %}}
 Success rate is another indicator, alongside mean time to recovery, of the stability of your application development process. However, the impact of success rate on both customers and development teams can vary according to a number of factors. Did the failure occur on the default branch or a development branch? Did the workflow involve a deployment? How important is the application or service being tested?
@@ -339,7 +347,7 @@ A failed signal is not necessarily indicative that something has gone wrong or t
 
 #### Success rate benchmark
 
-###### 90%+ success rate on default branches
+##### 90%+ success rate on default branches
 
 {{% note %}}
 We recommend maintaining a success rate of 90% or higher on default branches. This is a reasonable target for the mainline code of a mission-critical app, where changes should be merged only after passing a series of well written tests. Failures on topic branches are generally less disruptive to software delivery than those that occur on the default branch. It's important for your team to set its own benchmark for success on various other branches depending on how you use them. 
@@ -352,7 +360,7 @@ We recommend maintaining a success rate of 90% or higher on default branches. Th
 ![success-rate-data](/images/slides/success-rate-data.png)
 {.r-stretch}
 
-###### Benchmark: 90%+ on default
+##### Benchmark: 90%+ on default
 
 {{% note %}}
 Among CircleCI users, success rates on the default branch were 77% on average. On non-default branches, they were 67% on average. Success rates on the default branch have held steady over the past several iterations of our report. While neither number reaches our benchmark of 90%, the pattern of non-default branches having higher numbers of failures indicates that teams are utilizing effective branching patterns to isolate experimental or risky changes from critical mainline code. And while success rates haven’t moved much over the history of this report, recovery times have fallen sharply. This is a welcome sign that organizations are prioritizing iteration and resilience over momentum-killing perfectionism. 
@@ -362,7 +370,7 @@ Among CircleCI users, success rates on the default branch were 77% on average. O
 
 ### Throughput
 
-_average number of workflow runs that an organization completes on a given project per day_
+<p style="font-size: .75em; font-style: italic;">average number of workflow runs that an organization completes on a given project per day</p>
 
 {{% note %}}
 Throughput traditionally reflects the number of changes your developers are committing to your codebase in a 24-hour period
@@ -403,7 +411,7 @@ Of all the metrics, throughput is the most subjective to organizational goals. A
 ![throughput-data](/images/slides/throughput-data.png)
 {.r-stretch}
 
-###### Benchmark: at the speed of your business
+##### Benchmark: at the speed of your business
 
 {{% note %}}
 In our data set, the median workflow ran 1.54 times per day, a slight increase from 1.43 times per day in 2022. At the upper end of the spectrum, the top 5% of workflows ran 7 times per day or more, on par with what we’ve seen in previous years. Overall, the average project had 2.93 pipeline runs in 2023 compared to 2.83 in 2022. This uptick in productivity is not especially notable, but when taken in combination with the sharp decrease in MTTR discussed earlier in the report, it may reflect that teams are committing to smaller, more frequent changes to limit the complexity of outages and achieve faster, more consistent feedback on the state of their applications. 
@@ -439,7 +447,7 @@ Measuring and then optimizing Duration, Throughput, Mean Time to Recovery, and S
 
 ---
 
-### Platform teams and their impact
+### The impact of Platform teams
 
 ---
 ### Platform Teams, DevOps, and YOU
@@ -490,13 +498,13 @@ Platform engineers abstract the complexity of common DevOps processes into an in
 
 ---
 
-##### Platform Perspective: Duration
+#### Platform Perspective: Duration
 
 * Identify and eliminate impediments to developer velocity
 * Set guardrails and enforce quality standards across projects
-* Standardize test suites & CI pipeline configs, i.e. shareable config templates & policies
+* Standardize test suites & CI configs (shareable configs / policies)
 * Welcome failed pipelines, i.e. fast failure
-* Actively monitor, streamline, and parallelize pipelines across the org
+* Actively monitor, streamline, & parallelize pipelines across the org
 
 {{% note %}}
 Duration: Developers will naturally gravitate toward speed. And while platform teams are tasked with identifying and eliminating impediments to developer velocity, that is not their only mandate. Another, perhaps more important, responsibility of the platform engineer is to set guardrails and enforce quality standards across projects. These optimizations can save you valuable developer minutes without sacrificing the quality of your builds.   
@@ -504,13 +512,13 @@ Duration: Developers will naturally gravitate toward speed. And while platform t
 
 ---
 
-##### Platform Perspective: MTTR
+#### Platform Perspective: MTTR
 
 * Ephasise value of deploy-ready, default branches
-* Set up effective monitoring and alerting systems, and track recovery time
-* Limit frequency and severity of broken builds with role-based AC and config policies
-* Config- and Infrastructure-as-Code tools limit potential for misconfig errors
-* Actively monitor, streamline, and parallelize pipelines across the org
+* Set up effective monitoring & alerting systems, track recovery time
+* Limit frequency & severity of broken builds w/ role-based policies
+* Config- and Infrastructure-as-Code tools limit misconfig potential
+* Actively monitor, streamline, & parallelize pipelines across the org
 
 {{% note %}}
 MTTR: Platform teams often form the bridge between an organization’s business goals and its software delivery practices. Equipping developers to recover from broken builds quickly can have a significant impact on an organization's bottom line in terms of both developer productivity and customer satisfaction. Platform engineers can improve mean time to recovery in several ways. 
@@ -518,11 +526,11 @@ MTTR: Platform teams often form the bridge between an organization’s business 
 
 ---
 
-##### Platform Perspective: Success Rate
+#### Platform Perspective: Success Rate
 
-* With low success rates, look at MTTR and shorten recovery time first
-* Set baseline success rate, then aim for continuous improvement, looking for flaky tests or gaps in test coverage
-* Be mindful of patterns and influence of external factors, i.e. decline on Fridays, holidays, etc.
+* With low success rates, look at MTTR & shorten recovery time first
+* Set baseline success rate, aim for continuous improvement, look for flaky tests or test coverage gaps
+* Be mindful of patterns & influence of external factors, i.e. decline on Fridays, holidays, etc.
 
 {{% note %}}
 Success rate: It can be tempting as an organization to chase a success rate of 100% or to interpret high success rates as a sign of elite software delivery performance. And while it is desirable to maintain high rates of success on default branches, this metric means very little if you are not confident in the signal you are receiving from your CI system. Platform engineers have a responsibility to look beyond surface-level metrics and uncover the most meaningful data about team performance. 
@@ -530,7 +538,7 @@ Success rate: It can be tempting as an organization to chase a success rate of 1
 
 ---
 
-##### Platform Perspective: Throughput
+#### Platform Perspective: Throughput
 
 * Map goals to reality of internal & external business situations, i.e. customer expectations, competitive landscape, codebase complexity, etc.
 * Capture a baseline, monitor for deviations
@@ -557,14 +565,17 @@ Throughput: Platform engineering exists primarily to remove blockers from develo
         <div class="col">
             <h3 style="color: #04aa51;">Thank You.</h3>
             <p style="font-size: .75em;"></p>
-            <p style="font-size: .5em;">For feedback and swag: <font style="color: rgb(111, 168, 220);">circle.ci/jeremy</font></p>
+            <p style="font-size: .5em;">For feedback and swag: <font style="color: rgb(111, 168, 220);"><br />
+            <img src="/images/qrcode-cci-jeremy.png"><br />
+            <strong>circle.ci/jeremy</strong></font></p>
         </div>
+        <div class="col" align="center"></div>
         <div class="col" align="left" style="font-size: .5em;">
-            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle; margin: 20px;">timeline.jerdog.me<br />
-            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle; margin: 20px;">@IAmJerdog<br />
-            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle; margin: 20px;">@jerdog<br />
-            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 20px;">/in/jeremymeiss<br />
-            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle; margin: 20px;">@jerdog@hachyderm.io<br />
+            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle; margin: 10px;">timeline.jerdog.me<br />
+            <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle; margin: 10px;">@IAmJerdog<br />
+            <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle; margin: 10px;">@jerdog<br />
+            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 10px;">/in/jeremymeiss<br />
+            <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle; margin: 10px;">@jerdog@hachyderm.io
         </div>
     </div>
 </section>
