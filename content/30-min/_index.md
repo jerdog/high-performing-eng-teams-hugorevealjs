@@ -166,8 +166,7 @@ Duration, then, is best viewed as a proxy for how efficiently your pipelines del
 {.r-stretch}
 
 {{% note %}}
-These rapid feedback and delivery cycles don’t just benefit an organization’s end users; they are crucial to keeping developers happy, engaged, and in an uninterrupted state of flow. 
-So what's the ideal duration?
+These rapid feedback and delivery cycles don’t just benefit an organization’s end users; they are crucial to keeping developers happy, engaged, and in an uninterrupted state of flow.
 {{% /note %}}
 
 ---
@@ -177,6 +176,7 @@ So what's the ideal duration?
 
 {{% note %}}
 Yet an exclusive focus on speed often comes at the expense of stability. A pipeline optimized to deliver unverified changes is nothing more than a highly efficient way of shipping bugs to users and exposing your organization to unnecessary risk. To be able to move quickly with confidence, you need your pipeline to guard against all potential points of failure and to deliver actionable information that allows you to remediate flaws immediately, before reaching prod.
+So what is the ideal duration?
 {{% /note %}}
 
 ---
@@ -267,7 +267,7 @@ From an end user perspective, and for most organizations, nothing is more import
 
 <section>
 
-<p style="font-size: .75em; font-style: italic;">"A key part of doing a continuous build is that if the mainline build fails, it needs to be fixed right away. The whole point of working with CI is that you're always developing on a known stable base."</p> 
+<p style="font-size: .75em; font-style: italic;">"A key part of doing a continuous build is that if the mainline build fails, it needs to be fixed right away. The whole point of working with CI is that you're always developing on a known stable base."</p>
 
 -- **Martin Fowler (2006).** *"Continuous Integration."* Web blog post. MartinFowler.com
 
@@ -335,6 +335,8 @@ Success rate is another indicator, alongside mean time to recovery, of the stabi
 {{% /note %}}
 
 ---
+
+#### Failed signals are not all bad
 
 ![failed signals are ok](/images/slides/failed-signal-taunting.gif)
 {.r-stretch}
