@@ -111,7 +111,7 @@ We don’t believe in one-size-fits-all success metrics for delivery; because ev
 </section>
 
 {{% note %}}
-This report covers the standard engineering metrics of Duration, Mean time to recovery, Success Rate, and Throughput, plus our recommended benchmarks for each. But the sections have been expanded to show how your team can optimize your practice through team structure, culture, and operational strategy, to ensure you’re maintaining a key ingredient in achieving success: developer happiness.  
+This report covers the standard engineering metrics of Duration, Mean time to recovery, Success Rate, and Throughput, plus our recommended benchmarks for each.   
 {{% /note %}}
 
 ---
@@ -120,7 +120,7 @@ This report covers the standard engineering metrics of Duration, Mean time to re
 {.r-stretch}
 
 {{% note %}}
-So you probably came to your talk with this question: "How do you achieve elite status through a holistic software delivery practice?" Or it was for the Holy Grail references. Either way, it's a good question. Let's jump into the data
+We expanded on those metrics to show how your team can optimize through team structure, culture, and operational strategy, ensuring you’re maintaining a key ingredient in achieving success: developer happiness.
 {{% /note %}}
 
 ---
