@@ -10,7 +10,7 @@ custom_css = "css/custom.css"
 ![2023 state of software delivery report](/images/slides/sosdr-qrcode.png)
 {.r-stretch}
 
-##### circle.ci/sosdr2023}
+##### go.jmeiss.me/SoSDR2023
 
 ---
 
@@ -19,10 +19,6 @@ custom_css = "css/custom.css"
     <div class="multiCol">
         <div class="col">
             <h3 style="color: #04aa51;">Thank You.</h3>
-            <p style="font-size: .75em;"></p>
-            <p style="font-size: .5em;">For feedback and swag: <font style="color: rgb(111, 168, 220);"><br />
-            <img src="/images/qrcode-cci-jeremy.png"><br />
-            <strong>circle.ci/jeremy</strong></font></p>
         </div>
         <div class="col" align="center"></div>
         <div class="col" align="left" style="font-size: .5em;">

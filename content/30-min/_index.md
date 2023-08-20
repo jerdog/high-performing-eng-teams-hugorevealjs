@@ -557,7 +557,7 @@ Throughput: Platform engineering exists primarily to remove blockers from develo
 ![2023 state of software delivery report](/images/slides/sosdr-qrcode.png)
 {.r-stretch}
 
-##### circle.ci/sosdr2023
+##### go.jmeiss.me/SoSDR2023
 
 ---
 
@@ -566,10 +566,6 @@ Throughput: Platform engineering exists primarily to remove blockers from develo
     <div class="multiCol">
         <div class="col">
             <h3 style="color: #04aa51;">Thank You.</h3>
-            <p style="font-size: .75em;"></p>
-            <p style="font-size: .5em;">For feedback and swag: <font style="color: rgb(111, 168, 220);"><br />
-            <img src="/images/qrcode-cci-jeremy.png"><br />
-            <strong>circle.ci/jeremy</strong></font></p>
         </div>
         <div class="col" align="center"></div>
         <div class="col" align="left" style="font-size: .5em;">
