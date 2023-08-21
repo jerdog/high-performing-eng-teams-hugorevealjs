@@ -1,5 +1,5 @@
 +++
-title = "High-performing Engineering Teams, and the Holy Grail"
+title = "Continuous Delivery, High-performing Engineering Teams, and the Holy Grail"
 outputs = ["Reveal"]
 [reveal_hugo]
 custom_css = "css/custom.css"
