@@ -88,11 +88,11 @@ As CI adoption expanded over the last several years, many teams have had a “gr
 
 ---
 
-![state-of-reports](/images/slides/state-of-reports.png)
+![state-of-reports](/images/slides/state-of-reports.jpg)
 {.r-stretch}
 
 {{% note %}}
-Since 2019, we have been analysing the anonymous data from all of the jobs and workflows run on our platform, and we've identified a set of recommended baseline engineering metrics as related to CI/CD, and we've been able to paint a picture of what it means to have an elite and holistic software delivery practice. 
+Some of you may be familiar with the industry reports like the State of DevOps Report, the State of Cloud Native Report, and the CDF's own State of Continuous Delivery Report. These reports are great for understanding the industry as a whole, but they don't really give you a good idea of how your team is performing as they're largely based on self-reported data, and the memory of those taking the surveys. The report I will be talking about today is the State of Software Delivery Report, which CirclecI started compiling yearly in 2019, and is largely based on anonymized data from CircleCI's own platform of how developers and teams are actually working. 
 {{% /note %}}
 
 ---
@@ -101,7 +101,7 @@ Since 2019, we have been analysing the anonymous data from all of the jobs and w
 {.r-stretch}
 
 {{% note %}}
-We don’t believe in one-size-fits-all success metrics for delivery; because every team is different. However, the software delivery patterns we’ve observed, especially the data points from top delivery teams, show key similarities that suggest valuable benchmarks for teams to use as goals. 
+I don't believe in one-size-fits-all success metrics, because you're company and business isn't the same as the person sitting next to you. Unless you're coworkers, which could make this a really uncomfortable, and revealing, conversation. 
 {{% /note %}}
 
 ---
@@ -129,7 +129,7 @@ We don’t believe in one-size-fits-all success metrics for delivery; because ev
 </section>
 
 {{% note %}}
-This report covers the standard engineering metrics of Duration, Mean time to recovery, Success Rate, and Throughput, plus our recommended benchmarks for each.   
+So we're going to be talking about these standard engineering metrics, and how the data reveals some recommended benchmarks for each. But I do want to stress that these are "recommended", and that ultimately your business needs will play a big part into what a high-performing engineering team looks like for you.
 {{% /note %}}
 
 ---
@@ -138,7 +138,7 @@ This report covers the standard engineering metrics of Duration, Mean time to re
 {.r-stretch}
 
 {{% note %}}
-We expanded on those metrics to show how your team can optimize through team structure, culture, and operational strategy, ensuring you’re maintaining a key ingredient in achieving success: developer happiness.
+We'll also talk a little bit about the optimization steps necessary - sometimes through culture, structure, and strategy - in order to make sure you're maintaining a key ingredient in achieving success: developer happiness.
 {{% /note %}}
 
 ---
@@ -148,7 +148,7 @@ We expanded on those metrics to show how your team can optimize through team str
 <p style="font-size: .75em; font-style: italic;">the foundation of software engineering velocity, measures the average time in minutes required to move a unit of work through your pipeline</p>
 
 {{% note %}}
-Duration is the foundation of software engineering velocity. It measures the average time in minutes required to move a unit of work through your pipeline. Importantly, a unit of work does not always mean deploying to production – it may be as simple as running a few unit tests on a development branch. It can be best viewed as a proxy for how efficiently your pipelines deliver feedback on the health and quality of your code. 
+Duration is the foundation of software engineering velocity. Now this unit of work does not always mean deploying to production – it may be as simple as running a few unit tests on a development branch.
 {{% /note %}}
 
 ---
@@ -192,7 +192,7 @@ So what is the ideal duration?
 </section>
 
 {{% note %}}
-To get the maximum benefit from your workflows, we recommend aiming for a duration of 10 minutes, which is a widely accepted benchmark that dates back to Paul M. Duvall’s influential book on Continuous Integration. At this range, it is possible to generate enough information to feel confident in your code without introducing unnecessary friction in the software delivery process.
+To get the maximum benefit from your workflows, the recommendation is to aim for a duration of 10 minutes, which is a widely accepted benchmark that dates back to Paul M. Duvall’s influential book on Continuous Integration. At this range, it is possible to generate enough information to feel confident in your code without introducing unnecessary friction in the software delivery process.
 {{% /note %}}
 
 ---
@@ -206,7 +206,7 @@ To get the maximum benefit from your workflows, we recommend aiming for a durati
 
 
 {{% note %}}
-Among the workflows observed in our dataset, 50 % completed in 3.3 minutes or less, far below our 10 minute benchmark and nearly 30 seconds faster than previous reports. The fastest 25% of workflows completed in under a minute, and 75% completed in under 9. The avg duration was approx 11 minutes, reflecting the influence of longer-running workflows in the 95th percentile require 27 minutes or more to complete.
+Among the workflows observed in the dataset, 50% completed in 3.3 minutes or less; 25% of workflows completed in under a minute; 75% completing in under 9. The avg duration was approx 11 minutes, reflecting the influence of longer-running workflows in the 95th percentile requiring 27 minutes or more to complete.
 {{% /note %}}
 
 ---
@@ -219,7 +219,7 @@ Among the workflows observed in our dataset, 50 % completed in 3.3 minutes or le
 * Incorporate TDD practices by writing tests during design phase
 
 {{% note %}}
-Many teams continue to bias toward speed rather than robust testing. But, as shown here, the number one opportunity we’ve identified for improving performance across all four software delivery metrics is for organizations to enhance their test suites with more robust test coverage.
+Many teams continue to bias toward speed rather than robust testing. But the number one opportunity for improving performance across all four software delivery metrics is to enhance your test suites with more robust test coverage.
 {{% /note %}}
 
 ---
@@ -232,7 +232,7 @@ Many teams continue to bias toward speed rather than robust testing. But, as sho
 * Choose the right machine size for your needs
 
 {{% note %}}
-Balancing workflow speed and test coverage is ultimately a matter of prioritization: which features are part of the critical path? Where can you afford more experimentation and risk? Once you have buy-in from important stakeholders on how to best  balance test coverage and workflow speed, you can optimize your workflow duration with these techniques: Once you have buy-in from important stakeholders on how to best  balance test coverage and workflow speed, you can optimize your workflow duration with these techniques:
+To balance workflow speed and test coverage, prioritization has to take center stage, which means asking: "Which features are part of the critical path? Where can you afford more experimentation and risk?" These techniques, along with buy-in from important stakeholders on the right balance between test coverage and workflow speed, will help you optimize your pipelines.
 {{% /note %}}
 
 ---
@@ -241,7 +241,7 @@ Balancing workflow speed and test coverage is ultimately a matter of prioritizat
 {.r-stretch}
 
 {{% note %}}
-The path to optimizing your workflow durations is to combine comprehensive testing practices with efficient workflow orchestration. Teams that focus solely on speed not only spend more time rolling back broken updates and debugging in production but also face greater risk to their organizational reputation and stability.
+Teams who focus only on speed, not only will spend more time rolling back all their broken updates and debugging in production, BUT they'll also face greater risk to to their org's reputation and stability. Optimizing workflow durations means combining comprehensive test practices with efficient workflow orchestration.
 {{% /note %}}
 
 ---
@@ -251,7 +251,7 @@ The path to optimizing your workflow durations is to combine comprehensive testi
 <p style="font-size: .75em; font-style: italic;">the average time required to go from a failed build signal to a successful pipeline run</p>
 
 {{% note %}}
-MTTR. This metric is indicative of your team’s resilience and ability to respond quickly and effectively to feedback from your CI system. In other words, mean time to recovery is the best indicator of your organization’s DevOps maturity.
+MTTR is a metric indicative of your team's resilience and ability to respond quickly and effectively to feedback from your CI system. Meaning, it's the best indicator of your org's DevOps maturity.
 {{% /note %}}
 
 ---
@@ -260,7 +260,7 @@ MTTR. This metric is indicative of your team’s resilience and ability to respo
 {.r-stretch}
 
 {{% note %}}
-From an end user perspective, and for most organizations, nothing is more important than your team’s ability to recover from a broken build. While customers may not notice the steady stream of granular updates that you ship throughout the week, they will definitely notice when your application goes offline after broken code slips through your test suite.
+The way user's, and most org's, see it, nothing is more important than your team's ability to recover from a broken build. Customers are unlikely to notice the steady stream of granular updates made throughout the week, but they damn well will notice when broken code slips through your test suite.
 {{% /note %}}
 
 ---
@@ -274,7 +274,7 @@ From an end user perspective, and for most organizations, nothing is more import
 </section>
 
 {{% note %}}
-In a 2006 blog post, Martin Fowler described the north star for software teams’ MTTR: “Fix broken builds immediately.” Does this mean your team should aim for resolving failed workflows within a matter of seconds? Or better yet avoid build failures at all costs? Not at all! Broken builds happen, and with proper tests in place, the information from a red build has as much (if not more) value for development teams as a passing green build.
+In 2006, Martin Fowler described the north star for software teams’ MTTR: “Fix broken builds immediately.” Does this mean your team should aim for resolving failed workflows within a matter of seconds? Or better yet avoid build failures at all costs? Not at all! Broken builds happen, but with proper tests in place, the info from a red build has as much (if not more) value for development teams as a passing green build.
 {{% /note %}}
 
 ---
@@ -284,7 +284,7 @@ In a 2006 blog post, Martin Fowler described the north star for software teams�
 ##### <=60min MTTR on default branches
 
 {{% note %}}
-For this reason, we recommend that you aim to fix broken builds on any branch in under 60 minutes. Depending on the scale of your user base and criticality of your application, your target recovery time may be significantly lower or higher. However, the ability to recover in under an hour is strongly correlated with other indicators of high-performing teams and will allow your organization to avoid the worst outcomes of prolonged failures.
+As a result, it's recommended that you aim to fix broken builds on any branch in under 60 minutes. Depending on the scale of your user base and criticality of your application, your target may be significantly lower or higher. However, the ability to recover in under an hour is strongly correlated with the other metrics, and will allow your organization to avoid the worst outcomes of prolonged failures.
 {{% /note %}}
 
 ---
@@ -297,7 +297,7 @@ For this reason, we recommend that you aim to fix broken builds on any branch in
 ##### Benchmark: 60 mins
 
 {{% note %}}
-On CircleCI, 50% of workflows recovered in 64 minutes or less, very nearly equal to our benchmark of 60 minutes. This was a significant improvement from our previous two reports, which showed median times that were 10 minutes longer, and the most notable change among any of the four metrics in this report's data. The top 25% recovered in 15 minutes or less, and the top 5% recovered in under 5 minutes. 
+The data set shows 50% recovery in 64min or less, down from almost 10min longer. The top 25% recovered in 15 min or less, and the top 5% in under 5. 
 {{% /note %}}
 
 ---
@@ -321,7 +321,7 @@ The first step to lowering recovery times is to treat your default branch as the
 * SSH into the failed build machine to debug remote test env
 
 {{% note %}}
-Bear in mind that recovery speed is inextricably bound with pipeline duration: the shortest possible time to recovery is the length of your next pipeline run. So these techniques require the previously mentioned optimizations, and then you can start getting to faster recovery times
+Recovery speed is completely bound with pipeline duration: shortest possible TTR is the length of your next pipeline run. So all of these techniques require the other optimizations before you can get to faster recovery times.
 {{% /note %}}
 
 ---
@@ -331,7 +331,7 @@ Bear in mind that recovery speed is inextricably bound with pipeline duration: t
 <p style="font-size: .75em; font-style: italic;">number of passing runs divided by the total number of runs over a period of time</p>
 
 {{% note %}}
-Success rate is another indicator, alongside mean time to recovery, of the stability of your application development process. However, the impact of success rate on both customers and development teams can vary according to a number of factors. Did the failure occur on the default branch or a development branch? Did the workflow involve a deployment? How important is the application or service being tested?
+Along with MTTR, success rate is another indicator of the stability of your AppDev process. But, the impact of success rate on customers and developers varies according to a few factors: What branch was the failure on (default or dev)? Did the workflow involve a deployment? How important is the app or service?
 {{% /note %}}
 
 ---
@@ -342,7 +342,7 @@ Success rate is another indicator, alongside mean time to recovery, of the stabi
 {.r-stretch}
 
 {{% note %}}
-A failed signal is not necessarily indicative that something has gone wrong or there is a problem that needs to be addressed on a deeper level than your standard recovery processes. Far more important is your team’s ability to ingest the signal quickly (duration) and remediate the error effectively (MTTR). Again, a failed workflow that delivers a fast, valuable signal is far more desirable than a passing workflow that offers thin or unreliable information. 
+A failed signal isn't necessarily indicative of something going wrong or, a problem that needs to be addressed on a deeper level than your standard recovery processes. Far more important is your team’s ability to take in the signal quickly (DURATION) and remediate the error effectively (MTTR). Failed workflows that delivers fast, valuable signals are far more desirable than a passing workflow with little to no reliable info. 
 {{% /note %}}
 
 ---
@@ -352,7 +352,7 @@ A failed signal is not necessarily indicative that something has gone wrong or t
 ##### 90%+ success rate on default branches
 
 {{% note %}}
-We recommend maintaining a success rate of 90% or higher on default branches. This is a reasonable target for the mainline code of a mission-critical app, where changes should be merged only after passing a series of well written tests. Failures on topic branches are generally less disruptive to software delivery than those that occur on the default branch. It's important for your team to set its own benchmark for success on various other branches depending on how you use them. 
+Maintaining a success rate of 90% or higher on default branches is a reasonable target for the mainline code of a mission-critical app, where changes should be merged only after passing a series of well-written tests. Topic branch failures are generally less disruptive than those occuring on the default branch. It's important for your team to set its own benchmark for success on non-default branches depending on how you use them. 
 {{% /note %}}
 
 ---
@@ -365,7 +365,7 @@ We recommend maintaining a success rate of 90% or higher on default branches. Th
 ##### Benchmark: 90%+ on default
 
 {{% note %}}
-Among CircleCI users, success rates on the default branch were 77% on average. On non-default branches, they were 67% on average. Success rates on the default branch have held steady over the past several iterations of our report. While neither number reaches our benchmark of 90%, the pattern of non-default branches having higher numbers of failures indicates that teams are utilizing effective branching patterns to isolate experimental or risky changes from critical mainline code. And while success rates haven’t moved much over the history of this report, recovery times have fallen sharply. This is a welcome sign that organizations are prioritizing iteration and resilience over momentum-killing perfectionism. 
+Back to the data: Success rates on the default branch were 77% on average, with 67% on non-default branches. The trends show that success rates on default branches have held steady over the past several reports. While neither reaches the benchmark of 90%, the pattern of non-default branches having higher numbers of failures indicates teams are utilizing effective branching patterns to isolate experimental or risky changes from critical mainline code. And while success rates haven’t moved much over the previous reports, recovery times have fallen sharply. This is a good sign that orgs are prioritizing iteration and resilience over momentum-killing perfectionism.
 {{% /note %}}
 
 ---
@@ -403,7 +403,7 @@ Of course, throughput also tells you nothing about the quality of work you are p
 {{% fragment %}}It depends.{{% /fragment %}}
 
 {{% note %}}
-Of all the metrics, throughput is the most subjective to organizational goals. A large cloud-native organization actively developing a critical product line will require far higher levels of throughput than a small team maintaining legacy software or niche internal tooling. It really does depend. There's isn't a universally applicable throughput target - it needs to be set according to your internal business requirements. The type of work, the resources available, the expectations of your users all play into it. Far more important than the volume of work you’re doing is the quality and impact of that work. 
+Of all the metrics, throughput is the most subjective to org goals. A large cloud-native org actively developing a critical product line will require far higher levels of throughput than a small team maintaining legacy software or niche internal tooling. It really does depend. There's not a universally applicable throughput target - it needs to be set according to your internal business requirements. The type of work, the resources available, the expectations of your users all play into it. Far more important than the volume of work you’re doing is the quality and impact of that work.
 {{% /note %}}
 
 ---
@@ -416,15 +416,14 @@ Of all the metrics, throughput is the most subjective to organizational goals. A
 ##### Benchmark: at the speed of your business
 
 {{% note %}}
-In our data set, the median workflow ran 1.54 times per day, a slight increase from 1.43 times per day in 2022. At the upper end of the spectrum, the top 5% of workflows ran 7 times per day or more, on par with what we’ve seen in previous years. Overall, the average project had 2.93 pipeline runs in 2023 compared to 2.83 in 2022. This uptick in productivity is not especially notable, but when taken in combination with the sharp decrease in MTTR discussed earlier in the report, it may reflect that teams are committing to smaller, more frequent changes to limit the complexity of outages and achieve faster, more consistent feedback on the state of their applications. 
-{{% /note %}}
+So, in the data the median workflow ran 1.54 times per day, with the top 5% ran 7 times per day or more - not much change from previous reports. Overall, the average project had 2.93 pipeline runs in 2023, a slight uptick compared to 2.83 in 2022. This uptick isn't much, but when combined with the sharp decrease in MTTR, it could reflect that teams are committing to smaller, more frequent changes to limit the complexity of outages and achieve faster, more consistent feedback on the state of their applications.{{% /note %}}
 
 ---
 
 ##### Throughput is the most dependent on the other metrics
 
 {{% note %}}
-Of the four metrics measured in this report, throughput is the most dependent on the others.  How long your workflows take to complete, how often those workflows fail, and the amount of time it takes to recover from a failure all affect your developers’ ability to focus on new work and the frequency of their commits. To improve your team’s throughput, first address all the potential underlying factors that can affect team productivity.
+Throughput is the most dependent on the other metrics.  How long your workflows take to complete, how often they fail, and the amount of time it takes to recover from a failure all affect your developers’ ability to focus on new work and the frequency of their commits. To improve your team’s throughput, you have to first address all the potential underlying factors that can affect team productivity, as previously identified.
 {{% /note %}}
 
 ---
@@ -444,7 +443,7 @@ Throughput is often a trailing indicator of other changes in your processes and 
 {.r-stretch}
 
 {{% note %}}
-Measuring and then optimizing Duration, Throughput, Mean Time to Recovery, and Success Rate gives teams a tremendous advantage over organizations that do not track these key metrics.
+To sum up the data, here are the metrics over the last few years of the SoSDR. When you measure, and then optimize, these metrics, your teams (and company) gain a tremendous advantage over organizations that do not track these key metrics.
 {{% /note %}}
 
 ---
