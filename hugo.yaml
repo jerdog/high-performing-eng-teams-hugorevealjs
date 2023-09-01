@@ -19,12 +19,6 @@ markup:
         block: true
         title: true
 
-outputFormats:
-  reveal:
-    baseName: 'index'
-    isHTML: true
-    mediaType: 'text/html'
-
 params:
   # Set logo options
   logo:
