@@ -14,7 +14,8 @@ custom_css = "css/custom.css"
 {.r-stretch}
 
 {{% note %}}
-Software delivery has never been more critical to the success of business in every industry. It’s also never been more complex. Expectations for delivering high-quality software incredibly fast have skyrocketed - yesterday’s most exceptional product experiences are expected today to be more beautiful, intuitive, powerful, and affordable.{{% /note %}}
+Software delivery has never been more critical to the success of business in every industry. It’s also never been more complex. Expectations for delivering high-quality software incredibly fast have skyrocketed - yesterday’s most exceptional product experiences are expected today to be more beautiful, intuitive, powerful, and affordable.
+{{% /note %}}
 
 ---
 
@@ -39,10 +40,6 @@ But the landscape of tools, platforms, and architectures is constantly evolving.
     </div>
 </section>
 
-{{% note %}}
-
-{{% /note %}}
-
 ---
 
 #### So back to the tech industry...
@@ -64,21 +61,6 @@ Amidst this environment, stability and reliability have become increasingly impo
 
 ---
 
-#### Forrester 2021 Total Economic Impact Study
-
-##### Using best-in-class CI/CD platform can provide:
-
-* $7.8 million saved from shorter software development cycles.
-* $4.3 million recuperated in lost developer productivity.
-* 50% decrease in annual infrastructure spend.
-* $1.7 million estimated value of improved code quality.
-
-{{% note %}}
-Teams that prioritize robust testing as part of their CI practice can save millions of dollars over time.
-{{% /note %}}
-
----
-
 ![dude this is a Wendy's](/images/slides/pipelines.gif)
 {.r-stretch}
 
@@ -88,7 +70,7 @@ As CI adoption expanded over the last several years, many teams have had a “gr
 
 ---
 
-![state-of-reports](/images/slides/state-of-reports.jpg)
+![state-of-reports](/images/slides/state-of-reports.png)
 {.r-stretch}
 
 {{% note %}}
@@ -138,7 +120,7 @@ So we're going to be talking about these standard engineering metrics, and how t
 {.r-stretch}
 
 {{% note %}}
-We'll also talk a little bit about the optimization steps necessary - sometimes through culture, structure, and strategy - in order to make sure you're maintaining a key ingredient in achieving success: developer happiness.
+We'll also talk a little bit about the optimization steps necessary - sometimes through culture, structure, and strategy - in order to make sure you're maintaining a key ingredient in achieving success: developer happiness. 
 {{% /note %}}
 
 ---
@@ -166,17 +148,8 @@ Duration, then, is best viewed as a proxy for how efficiently your pipelines del
 {.r-stretch}
 
 {{% note %}}
-These rapid feedback and delivery cycles don’t just benefit an organization’s end users; they are crucial to keeping developers happy, engaged, and in an uninterrupted state of flow.
-{{% /note %}}
-
----
-
-![pipeline optimization](/images/slides/continuous-stuff.gif)
-{.r-stretch}
-
-{{% note %}}
-Yet an exclusive focus on speed often comes at the expense of stability. A pipeline optimized to deliver unverified changes is nothing more than a highly efficient way of shipping bugs to users and exposing your organization to unnecessary risk. To be able to move quickly with confidence, you need your pipeline to guard against all potential points of failure and to deliver actionable information that allows you to remediate flaws immediately, before reaching prod.
-So what is the ideal duration?
+These rapid feedback and delivery cycles don’t just benefit an organization’s end users; they are crucial to keeping developers happy, engaged, and in an uninterrupted state of flow. 
+So what's the ideal duration?
 {{% /note %}}
 
 ---
@@ -206,7 +179,7 @@ To get the maximum benefit from your workflows, the recommendation is to aim for
 
 
 {{% note %}}
-Among the workflows observed in the dataset, 50% completed in 3.3 minutes or less; 25% of workflows completed in under a minute; 75% completing in under 9. The avg duration was approx 11 minutes, reflecting the influence of longer-running workflows in the 95th percentile requiring 27 minutes or more to complete.
+Among the workflows observed in the dataset, 50 % completed in 3.3 minutes or less; 25% of workflows completed in under a minute; 75% completing in under 9. The avg duration was approx 11 minutes, reflecting the influence of longer-running workflows in the 95th percentile requiring 27 minutes or more to complete.
 {{% /note %}}
 
 ---
@@ -220,19 +193,6 @@ Among the workflows observed in the dataset, 50% completed in 3.3 minutes or les
 
 {{% note %}}
 Many teams continue to bias toward speed rather than robust testing. But the number one opportunity for improving performance across all four software delivery metrics is to enhance your test suites with more robust test coverage.
-{{% /note %}}
-
----
-
-#### Optimizing your pipelines
-
-* Use test splitting & parallelism for simultaneous multiple tests
-* Cache dependencies & data to avoid rebuilding unchanged code
-* Use Docker images custom made for CI environments
-* Choose the right machine size for your needs
-
-{{% note %}}
-To balance workflow speed and test coverage, prioritization has to take center stage, which means asking: "Which features are part of the critical path? Where can you afford more experimentation and risk?" These techniques, along with buy-in from important stakeholders on the right balance between test coverage and workflow speed, will help you optimize your pipelines.
 {{% /note %}}
 
 ---
@@ -297,7 +257,7 @@ As a result, it's recommended that you aim to fix broken builds on any branch in
 ##### Benchmark: 60 mins
 
 {{% note %}}
-The data set shows 50% recovery in 64min or less, down from almost 10min longer. The top 25% recovered in 15 min or less, and the top 5% in under 5. 
+The data set shows 50% recovery in 64min or less, down from almost 10min longer. The top 25% recovered in 15 min or less, and the top 5% in under 5.
 {{% /note %}}
 
 ---
@@ -444,6 +404,106 @@ Throughput is often a trailing indicator of other changes in your processes and 
 
 {{% note %}}
 To sum up the data, here are the metrics over the last few years of the SoSDR. When you measure, and then optimize, these metrics, your teams (and company) gain a tremendous advantage over organizations that do not track these key metrics.
+{{% /note %}}
+
+---
+
+### Platform Teams, DevOps, and YOU
+
+{{% note %}}
+I'm sure you've all heard by now that DevOps is dead.
+{{% /note %}}
+
+---
+
+#### No, DevOps is not dead
+
+![devops is not dead](/images/slides/devops-not-dead.png)
+{.r-stretch}
+
+{{% note %}}
+DevOps as a principle, a mindset of putting culture ahead of tools, and breaking down silos (physical and cultural) and growing lines of communication between Dev and Ops has been good. DevOps is not going anywhere, and still forms the construct for how high-performing engineering teams (and organizations) function. But at the same time, let's think back to earlier where I talked about the complexity of modern app development, specifically illustrated with the CNCF landscape.  
+{{% /note %}}
+
+---
+
+![cncf landscape](/images/slides/cncf-landscape.png)
+{.r-stretch}
+
+{{% note %}}
+There's constantly a need for devs to learn new tools and sometimes infrastructure, while coding and prioritizing ops tasks alongside feature development. The weight of these demands not only leads to lower levels of productivity and effectiveness, but it also shows up in stress, burnout, and reduced job satisfaction. And as a result, we've seen the cognitive load increase, driving up errors and negatively impacting the customer experience. So what are some of the practices your team can begin to incorporate to increase your platform’s stability, do more with less, and save money?
+{{% /note %}}
+
+---
+
+### The Rise of Platform Teams
+
+![platform teams](/images/slides/platform-teams.png)
+{.r-stretch}
+
+{{% note %}}
+One of the things we've started seeing in the industry is a logical extension of a mature DevOps org... Platform engineering (or the Platform Team) Platform engineering is designed to work alongside existing DevOps concepts while alleviating the associated cognitive load. The general premise is to bring self-service to DevOps. 
+{{% /note %}}
+
+---
+
+![platform](/images/slides/platform.png)
+{.r-stretch}
+
+{{% note %}}
+Platform engineers abstract the complexity of common DevOps processes into an internal developer platform (IDP) that provides a standard set of tools for building and deploying applications. Platform engineering aims to enhance DevOps, not replace it, by removing the need for developers to learn, develop, and maintain infrastructure tools and processes. So let's look at how Platform engineering can contribute to achieving these metrics for high-performing engineering teams
+{{% /note %}}
+
+---
+
+#### Platform Perspective: Duration
+
+* Identify and eliminate impediments to developer velocity
+* Set guardrails and enforce quality standards across projects
+* Standardize test suites & CI configs (shareable configs / policies)
+* Welcome failed pipelines, i.e. fast failure
+* Actively monitor, streamline, & parallelize pipelines across the org
+
+{{% note %}}
+Duration: Developers will naturally gravitate toward speed. And while platform teams are tasked with identifying and eliminating impediments to developer velocity, that is not their only mandate. Another, perhaps more important, responsibility of the platform engineer is to set guardrails and enforce quality standards across projects. These optimizations can save you valuable developer minutes without sacrificing the quality of your builds.   
+{{% /note %}}
+
+---
+
+#### Platform Perspective: MTTR
+
+* Ephasise value of deploy-ready, default branches
+* Set up effective monitoring & alerting systems, track recovery time
+* Limit frequency & severity of broken builds w/ role-based policies
+* Config- and Infrastructure-as-Code tools limit misconfig potential
+* Actively monitor, streamline, & parallelize pipelines across the org
+
+{{% note %}}
+MTTR: Platform teams often form the bridge between an organization’s business goals and its software delivery practices. Equipping developers to recover from broken builds quickly can have a significant impact on an organization's bottom line in terms of both developer productivity and customer satisfaction. Platform engineers can improve mean time to recovery in several ways. 
+{{% /note %}}
+
+---
+
+#### Platform Perspective: Success Rate
+
+* With low success rates, look at MTTR & shorten recovery time first
+* Set baseline success rate, aim for continuous improvement, look for flaky tests or test coverage gaps
+* Be mindful of patterns & influence of external factors, i.e. decline on Fridays, holidays, etc.
+
+{{% note %}}
+Success rate: It can be tempting as an organization to chase a success rate of 100% or to interpret high success rates as a sign of elite software delivery performance. And while it is desirable to maintain high rates of success on default branches, this metric means very little if you are not confident in the signal you are receiving from your CI system. Platform engineers have a responsibility to look beyond surface-level metrics and uncover the most meaningful data about team performance. 
+{{% /note %}}
+
+---
+
+#### Platform Perspective: Throughput
+
+* Map goals to reality of internal & external business situations, i.e. customer expectations, competitive landscape, codebase complexity, etc.
+* Capture a baseline, monitor for deviations
+* Alleviate as much developer cognitive load from day-to-day work
+
+{{% note %}}
+Throughput: Platform engineering exists primarily to remove blockers from development teams and to provide all the tools and resources necessary for an organization to achieve maximum productivity. Thus, throughput is often one of the top indicators used to evaluate the performance of not just the development team but of the platform team as well. 
 {{% /note %}}
 
 ---
