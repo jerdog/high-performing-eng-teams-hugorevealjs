@@ -465,10 +465,9 @@ To sum up the data, here are the metrics over the last few years of the SoSDR. W
         </div>
         <div class="col" align="center"></div>
         <div class="col" align="left" style="font-size: .5em;">
-            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle; margin: 10px;">timeline.jerdog.me<br />
+            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 10px;">/in/jeremymeiss<br />
             <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle; margin: 10px;">@IAmJerdog<br />
             <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle; margin: 10px;">@jerdog<br />
-            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 10px;">/in/jeremymeiss<br />
             <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle; margin: 10px;">@jerdog@hachyderm.io
         </div>
     </div>
