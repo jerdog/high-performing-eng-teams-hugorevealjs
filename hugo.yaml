@@ -26,12 +26,12 @@ params:
     top: '90%'
     left: '80%'
     width: '15%'
-  # logo-btm-left:
-  #   src: '/images/circleci-white-horizontal-logo.png'
-  #   top: '90%'
-  #   left: '5%'
-  #   width: '10%'
-  #   opacity: '0.5'
+  logo-btm-left:
+    src: '/images/cd-mini-summit-23-logo.png'
+    top: '85%'
+    left: '5%'
+    width: '10%'
+    opacity: '0.5'
   appearance:
     font: 'Open Sans'
     font_size: S
