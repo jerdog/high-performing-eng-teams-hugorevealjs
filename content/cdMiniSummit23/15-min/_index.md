@@ -61,11 +61,49 @@ Amidst this environment, stability and reliability have become increasingly impo
 
 ---
 
+### Continuous Delivery
+
+<p style="font-size: .75em; font-style: italic;">the ability to get changes-—features, configuration changes, bug fixes, experiments—-into production or into the hands of users, <strong>safely</strong> and <strong>quickly</strong> in a <strong>sustainable</strong> way.</p>
+
+-- **Jez Humble.**  DevOpsDays Seattle 2017. _Continuous Delivery Sounds Great But It Won’t Work Here_
+
+{{% note %}}
+One of the core tenets of DevOps is the idea of Continuous Delivery. Continuous Delivery is the ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way.
+{{% /note %}}
+
+---
+
+### Modern Software Delivery
+
+1. engineers <font color="red">owning their own code</font> in production
+2. practicing <font color="orange">observability-driven development</font>
+3. <font color="yellow">testing in production</font>
+4. separate deploys from releases with <font color="limegreen">feature flags</font>
+5. <font color="skyblue">continuous deployment/delivery</font>
+
+_-- Charity Majors, Fintech DevCon 2023_
+
+{{% note %}}
+In a recent talk at FinTech DevCon, Charity Majors, co-founder/CTO @Honeycomb, talked about a list of modern development practices. With the continuous delivery point, she focused heavily on...
+{{% /note %}}
+
+---
+
+<p style="font-size: 1em; font-style: italic;">Deploy as fast as possible, as automated as possible</p>
+
+_-- Charity Majors, Fintech DevCon 2023_
+
+{{% note %}}
+...the importance of deploying as fast as possible, as automated as possible. 
+{{% /note %}}
+
+---
+
 ![dude this is a Wendy's](/images/slides/pipelines.gif)
 {.r-stretch}
 
 {{% note %}}
-As CI adoption expanded over the last several years, many teams have had a “growth at all costs” mentality. But as the complexity of software systems increased, the cognitive load of maintaining those systems has really become overwhelming for both the devs and ops sides, creating situations where teams were cutting corners. DevOps teams must take away some of the complexity and be in a position to help systems recover quickly from failures. This is why many companies have instituted a Platform team — the need for a dedicated team to support the stability of their application has become obvious. More to come on that later.
+As CI/CD adoption has expanded over the last several years, many teams have had a “growth at all costs” mentality. But software system complexity has also increased, with the cognitive load of maintaining these systems really becoming an  overwhelming task for both devs and ops roles, creating situations where teams start to cut corners. DevOps teams must take away some of the complexity and be in a position to help systems recover quickly from failures. This is why many companies have instituted a Platform team — a dedicated team to support the stability of their application.
 {{% /note %}}
 
 ---
@@ -408,106 +446,6 @@ To sum up the data, here are the metrics over the last few years of the SoSDR. W
 
 ---
 
-### Platform Teams, DevOps, and YOU
-
-{{% note %}}
-I'm sure you've all heard by now that DevOps is dead.
-{{% /note %}}
-
----
-
-#### No, DevOps is not dead
-
-![devops is not dead](/images/slides/devops-not-dead.png)
-{.r-stretch}
-
-{{% note %}}
-DevOps as a principle, a mindset of putting culture ahead of tools, and breaking down silos (physical and cultural) and growing lines of communication between Dev and Ops has been good. DevOps is not going anywhere, and still forms the construct for how high-performing engineering teams (and organizations) function. But at the same time, let's think back to earlier where I talked about the complexity of modern app development, specifically illustrated with the CNCF landscape.  
-{{% /note %}}
-
----
-
-![cncf landscape](/images/slides/cncf-landscape.png)
-{.r-stretch}
-
-{{% note %}}
-There's constantly a need for devs to learn new tools and sometimes infrastructure, while coding and prioritizing ops tasks alongside feature development. The weight of these demands not only leads to lower levels of productivity and effectiveness, but it also shows up in stress, burnout, and reduced job satisfaction. And as a result, we've seen the cognitive load increase, driving up errors and negatively impacting the customer experience. So what are some of the practices your team can begin to incorporate to increase your platform’s stability, do more with less, and save money?
-{{% /note %}}
-
----
-
-### The Rise of Platform Teams
-
-![platform teams](/images/slides/platform-teams.png)
-{.r-stretch}
-
-{{% note %}}
-One of the things we've started seeing in the industry is a logical extension of a mature DevOps org... Platform engineering (or the Platform Team) Platform engineering is designed to work alongside existing DevOps concepts while alleviating the associated cognitive load. The general premise is to bring self-service to DevOps. 
-{{% /note %}}
-
----
-
-![platform](/images/slides/platform.png)
-{.r-stretch}
-
-{{% note %}}
-Platform engineers abstract the complexity of common DevOps processes into an internal developer platform (IDP) that provides a standard set of tools for building and deploying applications. Platform engineering aims to enhance DevOps, not replace it, by removing the need for developers to learn, develop, and maintain infrastructure tools and processes. So let's look at how Platform engineering can contribute to achieving these metrics for high-performing engineering teams
-{{% /note %}}
-
----
-
-#### Platform Perspective: Duration
-
-* Identify and eliminate impediments to developer velocity
-* Set guardrails and enforce quality standards across projects
-* Standardize test suites & CI configs (shareable configs / policies)
-* Welcome failed pipelines, i.e. fast failure
-* Actively monitor, streamline, & parallelize pipelines across the org
-
-{{% note %}}
-Duration: Developers will naturally gravitate toward speed. And while platform teams are tasked with identifying and eliminating impediments to developer velocity, that is not their only mandate. Another, perhaps more important, responsibility of the platform engineer is to set guardrails and enforce quality standards across projects. These optimizations can save you valuable developer minutes without sacrificing the quality of your builds.   
-{{% /note %}}
-
----
-
-#### Platform Perspective: MTTR
-
-* Ephasise value of deploy-ready, default branches
-* Set up effective monitoring & alerting systems, track recovery time
-* Limit frequency & severity of broken builds w/ role-based policies
-* Config- and Infrastructure-as-Code tools limit misconfig potential
-* Actively monitor, streamline, & parallelize pipelines across the org
-
-{{% note %}}
-MTTR: Platform teams often form the bridge between an organization’s business goals and its software delivery practices. Equipping developers to recover from broken builds quickly can have a significant impact on an organization's bottom line in terms of both developer productivity and customer satisfaction. Platform engineers can improve mean time to recovery in several ways. 
-{{% /note %}}
-
----
-
-#### Platform Perspective: Success Rate
-
-* With low success rates, look at MTTR & shorten recovery time first
-* Set baseline success rate, aim for continuous improvement, look for flaky tests or test coverage gaps
-* Be mindful of patterns & influence of external factors, i.e. decline on Fridays, holidays, etc.
-
-{{% note %}}
-Success rate: It can be tempting as an organization to chase a success rate of 100% or to interpret high success rates as a sign of elite software delivery performance. And while it is desirable to maintain high rates of success on default branches, this metric means very little if you are not confident in the signal you are receiving from your CI system. Platform engineers have a responsibility to look beyond surface-level metrics and uncover the most meaningful data about team performance. 
-{{% /note %}}
-
----
-
-#### Platform Perspective: Throughput
-
-* Map goals to reality of internal & external business situations, i.e. customer expectations, competitive landscape, codebase complexity, etc.
-* Capture a baseline, monitor for deviations
-* Alleviate as much developer cognitive load from day-to-day work
-
-{{% note %}}
-Throughput: Platform engineering exists primarily to remove blockers from development teams and to provide all the tools and resources necessary for an organization to achieve maximum productivity. Thus, throughput is often one of the top indicators used to evaluate the performance of not just the development team but of the platform team as well. 
-{{% /note %}}
-
----
-
 #### 2023 State of Software Delivery Report
 
 ![2023 state of software delivery report](/images/slides/sosdr-qrcode.png)
@@ -525,10 +463,9 @@ Throughput: Platform engineering exists primarily to remove blockers from develo
         </div>
         <div class="col" align="center"></div>
         <div class="col" align="left" style="font-size: .5em;">
-            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle; margin: 10px;">timeline.jerdog.me<br />
+            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 10px;">/in/jeremymeiss<br />
             <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle; margin: 10px;">@IAmJerdog<br />
             <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle; margin: 10px;">@jerdog<br />
-            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 10px;">/in/jeremymeiss<br />
             <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle; margin: 10px;">@jerdog@hachyderm.io
         </div>
     </div>

@@ -64,17 +64,40 @@ Amidst this environment, stability and reliability have become increasingly impo
 
 ---
 
-#### Forrester 2021 Total Economic Impact Study
+### Continuous Delivery
 
-##### Using best-in-class CI/CD platform can provide:
+<p style="font-size: .75em; font-style: italic;">the ability to get changes-—features, configuration changes, bug fixes, experiments—-into production or into the hands of users, <strong>safely</strong> and <strong>quickly</strong> in a <strong>sustainable</strong> way.</p>
 
-* $7.8 million saved from shorter software development cycles.
-* $4.3 million recuperated in lost developer productivity.
-* 50% decrease in annual infrastructure spend.
-* $1.7 million estimated value of improved code quality.
+-- **Jez Humble.**  DevOpsDays Seattle 2017. _Continuous Delivery Sounds Great But It Won’t Work Here_
 
 {{% note %}}
-Teams that prioritize robust testing as part of their CI practice can save millions of dollars over time.
+One of the core tenets of DevOps is the idea of Continuous Delivery. Continuous Delivery is the ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way.
+{{% /note %}}
+
+---
+
+### Modern Software Delivery
+
+1. engineers <font color="red">owning their own code</font> in production
+2. practicing <font color="orange">observability-driven development</font>
+3. <font color="yellow">testing in production</font>
+4. separate deploys from releases with <font color="limegreen">feature flags</font>
+5. <font color="skyblue">continuous deployment/delivery</font>
+
+_-- Charity Majors, Fintech DevCon 2023_
+
+{{% note %}}
+In a recent talk at FinTech DevCon, Charity Majors, co-founder/CTO @Honeycomb, talked about a list of modern development practices. With the continuous delivery point, she focused heavily on...
+{{% /note %}}
+
+---
+
+<p style="font-size: 1em; font-style: italic;">Deploy as fast as possible, as automated as possible</p>
+
+_-- Charity Majors, Fintech DevCon 2023_
+
+{{% note %}}
+...the importance of deploying as fast as possible, as automated as possible. 
 {{% /note %}}
 
 ---
@@ -83,7 +106,7 @@ Teams that prioritize robust testing as part of their CI practice can save milli
 {.r-stretch}
 
 {{% note %}}
-As CI adoption expanded over the last several years, many teams have had a “growth at all costs” mentality. But as the complexity of software systems increased, the cognitive load of maintaining those systems has really become overwhelming for both the devs and ops sides, creating situations where teams were cutting corners. DevOps teams must take away some of the complexity and be in a position to help systems recover quickly from failures. This is why many companies have instituted a Platform team — the need for a dedicated team to support the stability of their application has become obvious. More to come on that later.
+As CI/CD adoption has expanded over the last several years, many teams have had a “growth at all costs” mentality. But software system complexity has also increased, with the cognitive load of maintaining these systems really becoming an  overwhelming task for both devs and ops roles, creating situations where teams start to cut corners. DevOps teams must take away some of the complexity and be in a position to help systems recover quickly from failures. This is why many companies have instituted a Platform team — a dedicated team to support the stability of their application.
 {{% /note %}}
 
 ---
@@ -465,10 +488,9 @@ To sum up the data, here are the metrics over the last few years of the SoSDR. W
         </div>
         <div class="col" align="center"></div>
         <div class="col" align="left" style="font-size: .5em;">
-            <img src="/images/slides/polywork.png" height="50px" style="vertical-align: middle; margin: 10px;">timeline.jerdog.me<br />
+            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 10px;">/in/jeremymeiss<br />
             <img src="/images/slides/twitter.png" height="50px" style="vertical-align: middle; margin: 10px;">@IAmJerdog<br />
             <img src="/images/slides/devto.png" height="50px" style="vertical-align: middle; margin: 10px;">@jerdog<br />
-            <img src="/images/slides/linkedin.png" height="50px" style="vertical-align: middle; margin: 10px;">/in/jeremymeiss<br />
             <img src="/images/slides/mastodon.png" height="50px" style="vertical-align: middle; margin: 10px;">@jerdog@hachyderm.io
         </div>
     </div>
