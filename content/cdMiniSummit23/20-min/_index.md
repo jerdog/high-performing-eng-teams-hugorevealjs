@@ -68,7 +68,7 @@ Amidst this environment, stability and reliability have become increasingly impo
 
 <p style="font-size: .75em; font-style: italic;">the ability to get changes-—features, configuration changes, bug fixes, experiments—-into production or into the hands of users, <strong>safely</strong> and <strong>quickly</strong> in a <strong>sustainable</strong> way.</p>
 
--- **Jez Humble.**  DevOpsDays Seattle 2017. _Continuous Delivery Sounds Great But It Won’t Work Here_
+-- **Jez Humble.**  DevOpsDays Seattle 2017. _<a href="https://www.youtube.com/watch?v=NNLBmbaZgkI&list=PLE7tQUdRKcyZJqN9CA1j9_uyHSqRI6Kpk&index=14" target="_blank">Continuous Delivery Sounds Great But It Won’t Work Here</a>_
 
 {{% note %}}
 One of the core tenets of DevOps is the idea of Continuous Delivery. Continuous Delivery is the ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way.
