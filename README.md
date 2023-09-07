@@ -13,6 +13,9 @@ Jeremy is a Developer Relations and Community professional, formerly the Directo
 
 "High-performing engineering teams" are the Holy Grail for every CTO. But what are they, are they attainable, and if so, how? In this talk we'll look at CI/CD data from over 15mil anonymous workflows, and compare against the last few years on the CircleCI platform, and explore this rare specimen in its native habitat - right there in your organization, and how to activate them using some better DevOps practices. We'll also explore some of the benchmarks for CI/CD success, including the role of a Platform Team for your business!
 
+### Variants
+- [cd Mini Summit 2023](https://github.com/jerdog/high-performing-eng-teams-hugorevealjs/tree/CD-variant), Bilbao, Spain
+
 #### Links
 
 - [Sessionize profile](https://sessionize.com/jeremy-meiss)
