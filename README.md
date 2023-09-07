@@ -1,6 +1,10 @@
-##High-performing Engineering Teams, and the Holy Grail
+# High-performing Engineering Teams, and the Holy Grail
 
 ## Conference talk
+
+Built using:
+- [Reveal-Hugo theme](https://github.com/dzello/reveal-hugo) for Reveal.js, built by @dzello
+- [Hugo](https://gohugo.io/) static site generator
 
 ### Author
 
