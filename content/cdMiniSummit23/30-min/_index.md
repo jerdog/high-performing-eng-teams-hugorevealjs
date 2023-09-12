@@ -66,16 +66,53 @@ Amidst this environment, stability and reliability have become increasingly impo
 
 ### Continuous Delivery
 
+![aws-cd-def](/images/slides/cd-aws-image.png "Source: AWS Continuous Delivery" )
+
+{{% note %}}
+One of the core tenets of DevOps and a solid Pipeline is the idea of Continuous Delivery. 
+{{% /note %}}
+
+---
+
+#### What would _you_ say CD is?
+
+![cd-tweet](/images/slides/tweet-cd-def.jpg)
+
+{{% note %}}
+I put out a question a few weeks ago about how people would define CD... I got one response.
+{{% /note %}}
+
+---
+
+![cd-tweet](/images/slides/tracy-miranda-cd-def-gif.gif)
+
+---
+
+### Continuous Delivery
+
 <p style="font-size: .75em; font-style: italic;">the ability to get changes-—features, configuration changes, bug fixes, experiments—-into production or into the hands of users, <strong>safely</strong> and <strong>quickly</strong> in a <strong>sustainable</strong> way.</p>
 
 -- **Jez Humble.**  DevOpsDays Seattle 2017. _<a href="https://www.youtube.com/watch?v=NNLBmbaZgkI&list=PLE7tQUdRKcyZJqN9CA1j9_uyHSqRI6Kpk&index=14" target="_blank">Continuous Delivery Sounds Great But It Won’t Work Here</a>_
 
 {{% note %}}
-One of the core tenets of DevOps is the idea of Continuous Delivery. Continuous Delivery is the ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way.
+Continuous Delivery is the ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way.
 {{% /note %}}
 
 ---
 
+#### What would _you_ say CD is?
+
+![cd-tweet](/images/slides/tweet-cd-def.jpg)
+
+{{% note %}}
+I put out a question a few weeks ago about how people would define CD... I got one response.
+{{% /note %}}
+
+---
+
+![cd-tweet](/images/slides/tracy-miranda-cd-def-gif.gif)
+
+---
 ### Modern Software Delivery
 
 1. engineers <font color="red">owning their own code</font> in production
