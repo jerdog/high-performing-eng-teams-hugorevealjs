@@ -66,6 +66,17 @@ Amidst this environment, stability and reliability have become increasingly impo
 
 ### Continuous Delivery
 
+![tracy-miranda-cd-def](../../../static/images/slides/tracymiranda-cd-def.jpg)
+{.r-stretch}
+
+{{% note %}}
+
+{{% /note %}}
+
+---
+
+### Continuous Delivery
+
 <p style="font-size: .75em; font-style: italic;">the ability to get changes-—features, configuration changes, bug fixes, experiments—-into production or into the hands of users, <strong>safely</strong> and <strong>quickly</strong> in a <strong>sustainable</strong> way.</p>
 
 -- **Jez Humble.**  DevOpsDays Seattle 2017. _<a href="https://www.youtube.com/watch?v=NNLBmbaZgkI&list=PLE7tQUdRKcyZJqN9CA1j9_uyHSqRI6Kpk&index=14" target="_blank">Continuous Delivery Sounds Great But It Won’t Work Here</a>_
