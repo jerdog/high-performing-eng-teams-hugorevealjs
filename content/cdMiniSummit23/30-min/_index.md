@@ -79,12 +79,15 @@ One of the core tenets of DevOps and a solid Pipeline is the idea of Continuous 
 ![cd-tweet](/images/slides/tweet-cd-def.jpg)
 
 {{% note %}}
-I put out a question a few weeks ago about how people would define CD... I got one response.
+I put out a question a few weeks ago about how people would define CD... Anyone want to take a stab at it?
 {{% /note %}}
 
 ---
 
 ![cd-tweet](/images/slides/tracy-miranda-cd-def-gif.gif)
+
+{{% note %}}
+...I only got one response - Tracy Miranda, who provided a really good definition
 
 ---
 
@@ -107,7 +110,7 @@ Continuous Delivery is the ability to get changes of all types—including new f
 4. separate deploys from releases with <font color="limegreen">feature flags</font>
 5. <font color="skyblue">continuous deployment/delivery</font>
 
-_-- Charity Majors, Fintech DevCon 2023_
+_-- Charity Majors, Fintech DevCon 2023, [Twitter thread](https://twitter.com/mipsytipsy/status/1695627275671413181)_
 
 {{% note %}}
 In a recent talk at FinTech DevCon, Charity Majors, co-founder/CTO @Honeycomb, talked about a list of modern development practices. With the continuous delivery point, she focused heavily on...
@@ -129,7 +132,7 @@ _-- Charity Majors, Fintech DevCon 2023_
 {.r-stretch}
 
 {{% note %}}
-As CI/CD adoption has expanded over the last several years, many teams have had a “growth at all costs” mentality. But software system complexity has also increased, with the cognitive load of maintaining these systems really becoming an  overwhelming task for both devs and ops roles, creating situations where teams start to cut corners. DevOps teams must take away some of the complexity and be in a position to help systems recover quickly from failures. This is why many companies have instituted a Platform team — a dedicated team to support the stability of their application.
+Over the last few years we've seen a jump in companies starting to understand this importance Charity speaks about, but too often they's done it with a “grow at all costs” mentality. But we all know that software systems are complex, and getting more so, and the cognitive load necessary to maintain those systems is really overwhelming for both Dev and Ops roles. All that led to cut corners, and it feels like we've seen more and more core systems experience outages as a result.
 {{% /note %}}
 
 ---
@@ -221,8 +224,7 @@ These rapid feedback and delivery cycles don’t just benefit an organization’
 {.r-stretch}
 
 {{% note %}}
-Yet an exclusive focus on speed often comes at the expense of stability. A pipeline optimized to deliver unverified changes is nothing more than a highly efficient way of shipping bugs to users and exposing your organization to unnecessary risk. To be able to move quickly with confidence, you need your pipeline to guard against all potential points of failure and to deliver actionable information that allows you to remediate flaws immediately, before reaching prod.
-So what is the ideal duration?
+Yet an exclusive focus on speed often comes at the expense of stability. A pipeline optimized to deliver unverified changes is nothing more than a highly efficient way of shipping bugs to users and exposing your organization to unnecessary risk. To be able to move quickly with confidence, you need your pipeline to guard against all potential points of failure and to deliver actionable information that allows you to remediate flaws immediately, before reaching prod. So what is the ideal duration?
 {{% /note %}}
 
 ---
@@ -250,9 +252,8 @@ To get the maximum benefit from your workflows, the recommendation is to aim for
 
 ##### Benchmark: 5-10mins
 
-
 {{% note %}}
-Among the workflows observed in the dataset, 50% completed in 3.3 minutes or less; 25% of workflows completed in under a minute; 75% completing in under 9. The avg duration was approx 11 minutes, reflecting the influence of longer-running workflows in the 95th percentile requiring 27 minutes or more to complete.
+Among the workflows observed in the dataset, 50% completed in 3.3 minutes or less; 25% of workflows completed in under a minute; 75% completing in under 9. The 95th percentile at approx 11min reflects a lot of longer-running workflows taking 27 minutes or more to complete.
 {{% /note %}}
 
 ---
