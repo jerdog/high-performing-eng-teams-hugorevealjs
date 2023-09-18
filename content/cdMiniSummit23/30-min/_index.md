@@ -88,6 +88,7 @@ I put out a question a few weeks ago about how people would define CD... Anyone 
 
 {{% note %}}
 ...I only got one response - Tracy Miranda, who provided a really good definition
+{{% /note %}}
 
 ---
 
