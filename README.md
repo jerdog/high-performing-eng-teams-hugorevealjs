@@ -1,6 +1,6 @@
 # Continuous Delivery, High-performing Engineering Teams, and the Holy Grail
 
-_cd Mini Summit 2023_
+_[cd Mini Summit 2023](https://cd-variant--high-performing-eng-teams.netlify.app/cdminisummit23/30-min/#/)_
 
 ## Conference talk
 
