@@ -27,7 +27,7 @@ params:
     left: '80%'
     width: '15%'
   logo-btm-left:
-    src: '/images/cd-mini-summit-23-logo.png'
+    src: '/images/90daysdevops-logo.png'
     top: '85%'
     left: '5%'
     width: '10%'
